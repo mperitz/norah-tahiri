@@ -1,0 +1,38 @@
+<div class="flex-section">
+  <p class="left">NORAH TAHIRI</p>
+  <div class="right dot-container">
+    <div
+      class="dot"
+      [style.background]="selectedProject ? selectedProject.color : '#363636'"
+      [style.display]="type === 'design' ? 'block' : 'none'"
+    ></div>
+    <div class="space"></div>
+    <a routerLink="/design">
+      <p>DESIGN</p>
+    </a>
+  </div>
+</div>
+<div class="list-container">
+  <p
+    *ngFor="let project of projects"
+    (mouseenter)="selectProject(project)"
+    (mouseleave)="deselectProject()"
+    [style.color]="getItemColor(project)"
+  >
+    {{project.name}}
+  </p>
+</div>
+<div class="flex-section">
+  <p class="left">ABOUT</p>
+  <div class="right dot-container">
+    <div
+      class="dot"
+      [style.background]="selectedProject ? selectedProject.color : '#363636'"
+      [style.display]="type === 'photography' ? 'block' : 'none'"
+    ></div>
+    <div class="space"></div>
+    <a routerLink="/photography">
+      <p>PHOTOGRAPHY</p>
+    </a>
+  </div>
+</div>

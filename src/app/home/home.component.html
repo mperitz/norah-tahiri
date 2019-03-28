@@ -1,0 +1,18 @@
+<div class="flex-container">
+  <side-content
+    class="side"
+    [projects]="projects"
+    [selectedProject]="selectedProject"
+    [type]="type"
+    (selected)="onSelectedProject($event)"
+  >
+  </side-content>
+  <side-image
+    class="side"
+    [projects]="projects"
+    [selectedProject]="selectedProject"
+    [imageSrc]="image"
+    [defaultBackgroundSrc]="type === 'design' ? '../../assets/images/design/group.svg' : '../../assets/images/photography/default@3x.jpg'"
+  >
+  </side-image>
+</div>

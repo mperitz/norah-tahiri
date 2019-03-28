@@ -1,0 +1,13 @@
+<div
+  class="side-image"
+  [ngClass]="selectedProject ? 'hidden' : 'visible'"
+  [ngStyle]="{'background-image': 'url(' + defaultBackgroundSrc + ')'}"
+>
+</div>
+<div
+  class="side-image"
+  *ngFor="let project of projects"
+  [ngClass]="selectedProject && selectedProject.name === project.name ? 'visible' : 'hidden'"
+  [ngStyle]="{'background-image': 'url(' + project.src + ')'}"
+>
+</div>
