@@ -18,12 +18,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.type = this.route.snapshot.data.type;
-    console.log(this.image)
   }
 
   get image(): string {
-    if (!this.selectedProject) return this.type === 'design' ? '../../assets/images/design/group.svg' : '../../assets/images/photography/default@3x.jpg';
-    return this.selectedProject.src;
+    return this.selectedProject ? this.selectedProject.src : '';
   }
 
   get projects(): Array<Project> {

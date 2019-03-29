@@ -11,8 +11,4 @@ export class SideImageComponent {
   @Input() projects: Array<Project>;
   @Input() selectedProject: Project;
   @Input() defaultBackgroundSrc: string;
-
-  ngOnInit() {
-    console.log(this.defaultBackgroundSrc)
-  }
 }

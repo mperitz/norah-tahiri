@@ -44,14 +44,14 @@ p {
   font-size: 36px;
   font-weight: bold;
   font-family: 'TiemposFine';
-  transition: color 300ms ease-in-out;
+  transition: color 200ms ease-in-out;
 }
 
 .dot {
   height: 7px;
   width: 7px;
   border-radius: 50%;
-  transition: background 300ms ease-in-out;
+  transition: background 200ms ease-in-out;
 }
 
 .dot-container {

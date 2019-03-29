@@ -7,6 +7,7 @@ import { SideImageComponent } from './side-image/side-image.component';
 import { SideContentComponent } from './side-content/side-content.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     SideImageComponent,
     SideContentComponent,
     NotFoundComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

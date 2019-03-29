@@ -1,6 +1,7 @@
 {
   "name": "norah-tahiri",
   "version": "0.0.0",
+  "license": "See LICENSE.md",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
