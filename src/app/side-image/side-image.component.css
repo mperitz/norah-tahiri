@@ -9,6 +9,14 @@
   transition: opacity 200ms ease-in-out;
 }
 
+.design {
+  background-image: url(../../assets/images/design/group.svg);
+}
+
+.photography {
+  background-image: url(../../assets/images/photography/default@3x.jpg);
+}
+
 .hidden {
   opacity: 0;
 }

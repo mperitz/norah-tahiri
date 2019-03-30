@@ -17,8 +17,13 @@ const routes: Routes = [
     data: { type: 'photography' },
   },
   {
-    path: 'about',
+    path: 'about/:type',
     component: AboutComponent,
+  },
+  {
+    path: 'about',
+    redirectTo: 'about/design',
+    pathMatch: 'full'
   },
   {
     path: '',

@@ -4,6 +4,7 @@
   background: black;
   height: 100vh;
   width: 100vw;
+  animation: fade-in 300ms linear;
 }
 
 .flex-container {

@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Oswald;
+  src: url("../assets/fonts/Oswald-Regular.ttf");
+}
+
+@font-face {
+  font-family: TiemposFine;
+  src: url("../assets/fonts/TiemposFineTest-Bold.otf");
+}
+
+@font-face {
+  font-family: TiemposText;
+  src: url("../assets/fonts/TiemposTextTest-Regular.otf");
+}

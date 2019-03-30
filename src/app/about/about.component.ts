@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-about',
@@ -7,15 +8,24 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+  redirectString: string;
+  private sub: Subscription;
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router
   ) { }
 
-  ngOnInit(): void {
-    // figure out how to browser history pop
-    // console.log(this.route)
+  ngOnInit() {
+    this.sub = this.route.params.subscribe(({ type }) => {
+      this.redirectString = type;
+    });
   }
 
+  ngOnDestroy() {
+    this.sub.unsubscribe();
+  }
+
+  get redirect(): string {
+    return `/${this.redirectString}`;
+  }
 }

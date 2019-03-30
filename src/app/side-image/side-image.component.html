@@ -1,13 +1,17 @@
 <div
-  class="side-image"
-  [ngClass]="selectedProject ? 'hidden' : 'visible'"
-  [ngStyle]="{'background-image': 'url(' + defaultBackgroundSrc + ')'}"
+  class="side-image design"
+  [ngClass]="getDefaultOpacityClass('design')"
+>
+</div>
+<div
+  class="side-image photography"
+  [ngClass]="getDefaultOpacityClass('photography')"
 >
 </div>
 <div
   class="side-image"
   *ngFor="let project of projects"
-  [ngClass]="selectedProject && selectedProject.name === project.name ? 'visible' : 'hidden'"
-  [ngStyle]="{'background-image': 'url(' + project.src + ')'}"
+  [ngClass]="getProjectOpacityClass(project.name)"
+  [style.backgroundImage]="getProjectBackground(project.src)"
 >
 </div>

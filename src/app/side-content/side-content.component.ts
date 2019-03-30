@@ -21,9 +21,18 @@ export class SideContentComponent {
     this.selected.emit(null);
   }
 
-  getItemColor(project: Project): string {
+  getListItemColor(project: Project): string {
     if (!this.selectedProject) return '#363636';
     else if (this.selectedProject.name === project.name) return this.selectedProject.color;
     else return '#d3d4d5';
   }
+
+  get dotColor(): string {
+    return this.selectedProject ? this.selectedProject.color : '#363636'
+  }
+
+  getDotDisplay(type: string): string {
+    return this.type === type ? 'block' : 'none'
+  }
+
 }

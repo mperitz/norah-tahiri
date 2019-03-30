@@ -1,12 +1,12 @@
 <div class="flex-section">
-  <a routerLink="/about">
+  <a [routerLink]="['/about', type]">
     <p class="left">NORAH TAHIRI</p>
   </a>
   <div class="right dot-container">
     <div
       class="dot"
-      [style.background]="selectedProject ? selectedProject.color : '#363636'"
-      [style.display]="type === 'design' ? 'block' : 'none'"
+      [style.background]="dotColor"
+      [style.display]="getDotDisplay('design')"
     ></div>
     <div class="space"></div>
     <a routerLink="/design">
@@ -19,20 +19,20 @@
     *ngFor="let project of projects"
     (mouseenter)="selectProject(project)"
     (mouseleave)="deselectProject()"
-    [style.color]="getItemColor(project)"
+    [style.color]="getListItemColor(project)"
   >
     {{project.name}}
   </p>
 </div>
 <div class="flex-section">
-  <a routerLink="/about">
+  <a [routerLink]="['/about', type]">
     <p class="left">ABOUT</p>
   </a>
   <div class="right dot-container">
     <div
       class="dot"
-      [style.background]="selectedProject ? selectedProject.color : '#363636'"
-      [style.display]="type === 'photography' ? 'block' : 'none'"
+      [style.background]="dotColor"
+      [style.display]="getDotDisplay('photography')"
     ></div>
     <div class="space"></div>
     <a routerLink="/photography">
