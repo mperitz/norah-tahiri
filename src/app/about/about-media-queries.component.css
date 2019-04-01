@@ -1,0 +1,11 @@
+@media screen and (max-width: 800px) {
+  .main-container {
+    width: 609px;
+    height: 145px;
+  }
+
+  .subtext-container {
+    width: 609px;
+    height: 114px;
+  }
+}

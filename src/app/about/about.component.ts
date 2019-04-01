@@ -5,7 +5,10 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: [
+    './about.component.css',
+    './about-media-queries.component.css',
+  ],
 })
 export class AboutComponent implements OnInit {
   redirectString: string;
