@@ -1,0 +1,14 @@
+@media screen and (max-width: 940px) {
+  .side {
+    width: 100%;
+  }
+
+  #side-content {
+    position: absolute;
+    z-index: 1;
+  }
+
+  #side-image {
+    opacity: 0.8;
+  }
+}

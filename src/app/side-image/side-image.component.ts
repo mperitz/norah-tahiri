@@ -4,7 +4,10 @@ import Project from 'src/data-structures/Project';
 @Component({
   selector: 'side-image',
   templateUrl: './side-image.component.html',
-  styleUrls: ['./side-image.component.css'],
+  styleUrls: [
+    './css/side-image.component.css',
+    './css/side-image-media-queries.component.css',
+  ],
 })
 export class SideImageComponent {
   @Input() imageSrc: string;

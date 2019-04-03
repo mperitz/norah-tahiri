@@ -8,7 +8,10 @@ import photographyProjects from '../../data/photography-projects';
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: [
+    './css/home.component.css',
+    './css/home-media-queries.component.css',
+  ],
 })
 export class HomeComponent implements OnInit {
   selectedProject: Project;
@@ -18,6 +21,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.type = this.route.snapshot.data.type;
+    this.selectedProject = window.screen.width <= 940 ? this.projects[0] : null
   }
 
   get image(): string {

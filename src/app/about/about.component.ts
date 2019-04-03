@@ -6,8 +6,8 @@ import { Subscription } from 'rxjs';
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: [
-    './about.component.css',
-    './about-media-queries.component.css',
+    './css/about.component.css',
+    './css/about-media-queries.component.css',
   ],
 })
 export class AboutComponent implements OnInit {
