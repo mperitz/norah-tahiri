@@ -1,6 +1,6 @@
 export default interface Project {
-  src:string,
-  name:string,
-  color:string,
+  src: string,
+  name: string,
+  color: string,
   isDefault: boolean,
 }
