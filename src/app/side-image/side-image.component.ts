@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
+
 import Project from 'src/data-structures/Project';
+import isVisibleIfTruthy from '../../util/isVisibleIfTruthy';
 
 @Component({
   selector: 'side-image',
@@ -16,15 +18,17 @@ export class SideImageComponent {
   @Input() type: string;
 
   getDefaultOpacityClass(type: string): string {
-    return this.selectedProject || this.type !== type ?
-      'hidden' :
-      'visible';
+    return isVisibleIfTruthy(
+      this.selectedProject.isDefault,
+      type === this.type,
+    );
   }
 
   getProjectOpacityClass(name: string): string {
-    return this.selectedProject && this.selectedProject.name === name ?
-      'visible' :
-      'hidden';
+    return isVisibleIfTruthy(
+      !this.selectedProject.isDefault,
+      this.selectedProject.name === name,
+    );
   }
 
   getProjectBackground(src: string): string {

@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import Project from '../../data-structures/Project';
-import designProjects from '../../data/design-projects';
-import photographyProjects from '../../data/photography-projects';
+import designProjects, { defaultDesignProject } from '../../data/design-projects';
+import photographyProjects, { defaultPhotographyProject } from '../../data/photography-projects';
 
 @Component({
   selector: 'home',
@@ -21,7 +21,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.type = this.route.snapshot.data.type;
-    this.selectedProject = window.screen.width <= 940 ? this.projects[0] : null
+    this.selectedProject = this.default;
+  }
+
+  get default(): Project {
+    return this.type === 'design' ? defaultDesignProject : defaultPhotographyProject;
   }
 
   get image(): string {
@@ -34,6 +38,6 @@ export class HomeComponent implements OnInit {
   }
 
   onSelectedProject(project: Project): void {
-    this.selectedProject = project;
+    this.selectedProject = project || this.default;
   }
 }
