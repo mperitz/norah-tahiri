@@ -43,6 +43,10 @@
     .list-container p {
       font-size: 30px;
     }
+
+    .flex-section a, .dot-container {
+      display: none;
+    }
   }
 
   @media screen and (max-width: 375px) {

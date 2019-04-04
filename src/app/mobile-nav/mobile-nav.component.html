@@ -1,0 +1,20 @@
+<div class="flex-container-nav">
+  <a
+    routerLink="/menu"
+    class="hamburger-container"
+    [ngClass]="checkHiddenHamburger()"
+  >
+    <div class="hamburger-line"></div>
+    <div class="hamburger-line"></div>
+    <div class="hamburger-line"></div>
+  </a>
+  <a
+    routerLink="/design"
+    class="hamburger-container exit-container"
+    [ngClass]="checkHiddenX()"
+  >
+    <div class="exit left"></div>
+    <div class="exit right"></div>
+  </a>
+  <h1 class="title-text">Norah Tahiri</h1>
+</div>

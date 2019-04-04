@@ -8,6 +8,8 @@ import { SideContentComponent } from './side-content/side-content.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AboutComponent } from './about/about.component';
+import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { AboutComponent } from './about/about.component';
     SideContentComponent,
     NotFoundComponent,
     AboutComponent,
+    MobileNavComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,

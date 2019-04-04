@@ -1,0 +1,60 @@
+.flex-container-nav {
+  height: 50px;
+  width: 100vw;
+  text-align: center;
+  background: white;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger-container {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.exit-container {
+  justify-content: center;
+}
+
+.hamburger-line {
+  height: 1px;
+  width: 30px;
+  background: #88898a;
+}
+
+.exit {
+  height: 1px;
+  width: 30px;
+  background: #88898a;
+}
+
+.left {
+  transform: rotate(45deg);
+}
+
+.right {
+  transform: rotate(315deg);
+}
+
+h1 {
+  margin: 0;
+  font-family: TiemposFine;
+  color: #363636;
+  font-size: 24px;
+}
+
+.hidden {
+  display: none;
+}
