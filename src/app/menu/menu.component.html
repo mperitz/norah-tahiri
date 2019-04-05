@@ -1,3 +1,19 @@
-<p>
-  menu works!
-</p>
+<div class="menu-container">
+  <div class="row">
+    <div class="row-container" (click)="toggleDesign()">
+      <p class="row-text">DESIGN</p>
+      <div [ngClass]="getArrowClass('design')"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row-container" (click)="togglePhotography()">
+      <p class="row-text">PHOTOGRAPHY</p>
+      <div [ngClass]="getArrowClass('photography')"></div>
+    </div>
+  </div>
+  <div class="row">
+    <a class="row-container" routerLink="/about">
+      <p class="row-text">ABOUT</p>
+    </a>
+  </div>
+</div>

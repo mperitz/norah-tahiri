@@ -1,0 +1,41 @@
+.menu-container {
+  height: calc(100vh - 50px);
+  width: 100vw;
+  background: black;
+  padding-top: 50px;
+}
+
+.row {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.row-container {
+  width: 86%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row-text {
+  color: white;
+  font-family: Oswald;
+  font-size: 17px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid white;
+  transition: transform 100ms ease-in-out;
+}
+
+.open {
+  transform: rotate(90deg);
+}
