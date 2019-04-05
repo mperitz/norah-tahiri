@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import designProjects from 'src/data/design-projects';
+import Project from 'src/data-structures/Project';
+import photographyProjects from 'src/data/photography-projects';
 
 @Component({
   selector: 'app-menu',
@@ -8,13 +11,35 @@ import { Component } from '@angular/core';
 export class MenuComponent {
   design: boolean = false;
   photography: boolean = false;
+  designProjects: Array<Project> = designProjects;
+  photographyProjects: Array<Project> = photographyProjects;
 
   toggleDesign(): void {
-    this.design = !this.design;
+    if (this.design) this.toggleDesignOff();
+    else this.toggleDesignOn();
   }
 
   togglePhotography(): void {
-    this.photography = !this.photography;
+    if (this.photography) this.togglePhotographyOff();
+    else this.togglePhotographyOn();
+  }
+
+  toggleDesignOn() {
+    this.design = true;
+    this.togglePhotographyOff();
+  }
+
+  toggleDesignOff() {
+    this.design = false;
+  }
+
+  togglePhotographyOn() {
+    this.photography = true;
+    this.toggleDesignOff();
+  }
+
+  togglePhotographyOff() {
+    this.photography = false;
   }
 
   getArrowClass(type: string): string {

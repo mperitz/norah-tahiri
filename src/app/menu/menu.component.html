@@ -5,12 +5,26 @@
       <div [ngClass]="getArrowClass('design')"></div>
     </div>
   </div>
+  <ng-template [ngIf]="design">
+    <div class="row large">
+      <div class="row-container" *ngFor="let designProj of designProjects">
+        <p class="content-text">{{designProj.name}}</p>
+      </div>
+    </div>
+  </ng-template>
   <div class="row">
     <div class="row-container" (click)="togglePhotography()">
       <p class="row-text">PHOTOGRAPHY</p>
       <div [ngClass]="getArrowClass('photography')"></div>
     </div>
   </div>
+  <ng-template [ngIf]="photography">
+    <div class="row large">
+      <div class="row-container" *ngFor="let photographyProj of photographyProjects">
+        <p class="content-text">{{photographyProj.name}}</p>
+      </div>
+    </div>
+  </ng-template>
   <div class="row">
     <a class="row-container" routerLink="/about">
       <p class="row-text">ABOUT</p>
