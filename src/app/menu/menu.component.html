@@ -7,6 +7,9 @@
   </div>
   <ng-template [ngIf]="design">
     <div class="row large">
+      <a routerLink="/design" class="row-container">
+        <p class="content-text">SEE ALL</p>
+      </a>
       <div class="row-container" *ngFor="let designProj of designProjects">
         <p class="content-text">{{designProj.name}}</p>
       </div>
@@ -20,6 +23,9 @@
   </div>
   <ng-template [ngIf]="photography">
     <div class="row large">
+      <a routerLink="/photography" class="row-container">
+        <p class="content-text">SEE ALL</p>
+      </a>
       <div class="row-container" *ngFor="let photographyProj of photographyProjects">
         <p class="content-text">{{photographyProj.name}}</p>
       </div>

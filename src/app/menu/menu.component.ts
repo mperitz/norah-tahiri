@@ -9,7 +9,7 @@ import photographyProjects from 'src/data/photography-projects';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
-  design: boolean = false;
+  design: boolean = true;
   photography: boolean = false;
   designProjects: Array<Project> = designProjects;
   photographyProjects: Array<Project> = photographyProjects;
