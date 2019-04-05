@@ -41,6 +41,7 @@ export class MenuComponent implements OnInit {
 
   toggleDesignOff() {
     this.design = false;
+    this.togglePhotographyOn();
   }
 
   togglePhotographyOn() {
@@ -50,6 +51,7 @@ export class MenuComponent implements OnInit {
 
   togglePhotographyOff() {
     this.photography = false;
+    this.toggleDesignOn()
   }
 
   getArrowClass(type: string): string {

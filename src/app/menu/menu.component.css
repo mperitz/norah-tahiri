@@ -86,3 +86,13 @@
   opacity: 0;
   animation: opacity 1ms linear 100ms forwards;
 }
+
+.footer {
+  border: none;
+}
+
+.footer-text {
+  font-family: Oswald;
+  font-size: 12px;
+  color: #88898a;
+}
