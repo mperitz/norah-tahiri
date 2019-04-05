@@ -10,6 +10,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AboutComponent } from './about/about.component';
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 import { MenuComponent } from './menu/menu.component';
+import { MobileContentListComponent } from './mobile-content-list/mobile-content-list.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MenuComponent } from './menu/menu.component';
     AboutComponent,
     MobileNavComponent,
     MenuComponent,
+    MobileContentListComponent,
   ],
   imports: [
     BrowserModule,

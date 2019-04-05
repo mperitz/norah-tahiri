@@ -1,8 +1,15 @@
 .menu-container {
-  height: calc(auto - 2px);
   width: 100vw;
   background: black;
   padding-top: 50px;
+}
+
+.auto-height {
+  height: auto;
+}
+
+.full-height {
+  height: calc(100vh - 50px);
 }
 
 .row {

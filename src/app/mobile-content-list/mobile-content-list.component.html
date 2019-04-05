@@ -1,0 +1,17 @@
+<div class="mobile-content-container">
+  <div
+    *ngFor="let project of projects"
+    class="mobile-project-container"
+  >
+    <div
+      class="mobile-background"
+      [style.backgroundImage]="getBackgroundImageUrl(project.src)"
+    ></div>
+    <div
+      class="mobile-project-name"
+      [style.background]="project.color"
+    >
+      <p>{{project.name}}</p>
+    </div>
+  </div>
+</div>
