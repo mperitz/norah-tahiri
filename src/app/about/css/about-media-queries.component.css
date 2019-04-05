@@ -9,3 +9,53 @@
     height: 114px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  #mobile {
+    display: flex;
+  }
+
+  .flex-container {
+    padding-top: 33%;
+  }
+
+  .main-container {
+    width: 320px;
+    height: 146px;
+  }
+
+  .main-text {
+    font-size: 24px;
+  }
+
+  .subtext-container {
+    width: 301px;
+    height: 95px;
+  }
+
+  .main-subtext {
+    font-size: 12px;
+  }
+
+  .flex-container.space-between, #desktop-tablet {
+    display: none;
+  }
+
+  .header-text {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .main-text {
+    font-size: 22px;
+  }
+
+  .main-subtext {
+    font-size: 10px;
+  }
+
+  .header-text {
+    font-size: 14px;
+  }
+}
