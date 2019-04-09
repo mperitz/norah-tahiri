@@ -1,0 +1,38 @@
+<div class="full-width-flex-container h100">
+  <div
+    class="main-image"
+    [style.backgroundImage]="imageUrl"
+  >
+  </div>
+  <div class="main-description-container">
+    <div class="main-text-container sponsor">
+      <p class="sponsor-text-top dark-text">{{project.client.toUpperCase()}}</p>
+    </div>
+    <div class="main-text-container description">
+      <p class="name-text dark-text">{{project.name}}</p>
+      <p class="description-text light-text">{{project.mainDescription}}</p>
+    </div>
+    <div class="scroll-line-container">
+      <div class="scroll-text">SCROLL</div>
+      <div class="scroll-line"></div>
+    </div>
+  </div>
+</div>
+
+<div class="full-width-flex-container" [style.background]="project.color + '7a'">
+  <div class="detail-half">
+    <div class="detail-text-container">
+      <p class="detail-title-text">Project Brief</p>
+      <p class="detail-subtitle-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+  <div class="detail-half">
+    <div class="detail-text-container">
+      <p class="detail-title-text">Role</p>
+      <p class="detail-subtitle-text">Art Director & Designer</p>
+    </div>
+    <div class="detail-text-container">
+      <div class="visit-button" [style.background]="project.color">VIEW PROJECT</div>
+    </div>
+  </div>
+</div>

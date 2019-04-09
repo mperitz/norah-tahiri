@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 import { MenuComponent } from './menu/menu.component';
 import { MobileContentListComponent } from './mobile-content-list/mobile-content-list.component';
+import { DesignProjectPageComponent } from './design-project-page/design-project-page.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MobileContentListComponent } from './mobile-content-list/mobile-content
     MobileNavComponent,
     MenuComponent,
     MobileContentListComponent,
+    DesignProjectPageComponent,
   ],
   imports: [
     BrowserModule,

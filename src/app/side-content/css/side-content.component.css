@@ -13,13 +13,13 @@ p {
 .flex-section p {
   margin: 0;
   font-size: 16px;
-  font-family: 'Oswald';
+  font-family: Oswald;
+  letter-spacing: 0.75px;
   color: #363636;
 }
 
 .flex-section a {
   color: #363636;
-  text-decoration: none;
 }
 
 .flex-section .left {
@@ -43,7 +43,8 @@ p {
   margin: 8px;
   font-size: 36px;
   font-weight: bold;
-  font-family: 'TiemposFine';
+  font-family: TiemposFine;
+  letter-spacing: 1px;
   transition: color 200ms ease-in-out;
 }
 
@@ -63,4 +64,8 @@ p {
 .space {
   width: 5px;
   height: 7px;
+}
+
+a {
+  text-decoration: none;
 }

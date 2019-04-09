@@ -1,7 +1,6 @@
 @media screen and (orientation: portrait) {
   .flex-section p {
     color: white;
-    text-shadow: 0px 0px 15px black;
   }
 
   .flex-section a {
@@ -11,14 +10,12 @@
   .list-container p {
     /* Need to use !important to overwrite [style.color] in <div> tag */
     color: white !important;
-    text-shadow: 0px 0px 15px black;
     margin: 20px;
   }
 
   .dot {
     /* Need to use !important to overwrite [style.background] in <div> tag */
     background: white !important;
-    box-shadow: 0px 0px 15px black;
   }
 
   @media screen and (max-width: 1200px) {

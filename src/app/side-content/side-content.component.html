@@ -15,14 +15,18 @@
   </div>
 </div>
 <div class="list-container">
-  <p
+  <a
+    [routerLink]="getLinkTo(project.id)"
     *ngFor="let project of projects"
-    (mouseenter)="selectProject(project)"
-    (mouseleave)="deselectProject()"
-    [style.color]="getListItemColor(project)"
   >
-    {{project.name}}
-  </p>
+    <p
+      (mouseenter)="selectProject(project)"
+      (mouseleave)="deselectProject()"
+      [style.color]="getListItemColor(project)"
+    >
+      {{project.name}}
+    </p>
+  </a>
 </div>
 <div class="flex-section">
   <a [routerLink]="['/about', type]">

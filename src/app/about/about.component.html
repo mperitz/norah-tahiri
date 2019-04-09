@@ -1,12 +1,14 @@
 <div class="about-container">
   <div class="flex-container space-between">
     <div class="column left">
-      <p class="header-text subtle">CURRENTLY: AVAILABLE FOR HIRE</p>
+      <a class="margin-left" [routerLink]="redirect">
+        <p class="header-text subtle pointer">BACK TO MENU</p>
+      </a>
     </div>
     <div class="space-column"></div>
     <div class="column right">
-      <a class="header-text" href="mailto:ntahiri@gmail.com" target="_top">CONTACT</a>
-      <a class="header-text" href="https://www.instagram.com/ntahiri/" target="_blank">FOLLOW</a>
+      <a class="header-text margin-right" href="mailto:ntahiri@gmail.com" target="_top">CONTACT</a>
+      <a class="header-text margin-right" href="https://www.instagram.com/ntahiri/" target="_blank">FOLLOW</a>
     </div>
   </div>
 
@@ -44,12 +46,12 @@
 
   <div class="flex-container space-between">
     <div class="column left">
-      <p class="header-text subtle">© NORAH TAHIRI 2019. ALL RIGHTS RESERVED</p>
+      <p class="header-text subtle margin-left">© NORAH TAHIRI 2019. ALL RIGHTS RESERVED</p>
     </div>
     <div class="space-column"></div>
     <div class="column right">
-      <a [routerLink]="redirect">
-        <p class="header-text subtle pointer">BACK TO MENU</p>
+      <a href="https://www.github.com/mperitz" target="_blank">
+        <p class="header-text subtle pointer margin-right">DEVELOPED BY MIKE PERITZ</p>
       </a>
     </div>
   </div>

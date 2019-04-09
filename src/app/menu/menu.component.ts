@@ -14,6 +14,7 @@ export class MenuComponent implements OnInit {
   designProjects: Array<Project> = designProjects;
   photographyProjects: Array<Project> = photographyProjects;
   heightClass: string;
+  footerClass: string;
 
   ngOnInit() {
     setTimeout(this.getHeight, 200);
@@ -41,7 +42,6 @@ export class MenuComponent implements OnInit {
 
   toggleDesignOff() {
     this.design = false;
-    this.togglePhotographyOn();
   }
 
   togglePhotographyOn() {
@@ -51,7 +51,6 @@ export class MenuComponent implements OnInit {
 
   togglePhotographyOff() {
     this.photography = false;
-    this.toggleDesignOn()
   }
 
   getArrowClass(type: string): string {
@@ -59,6 +58,8 @@ export class MenuComponent implements OnInit {
   }
 
   getHeight = (): void => {
-    this.heightClass = document.body.scrollHeight > window.screen.availHeight ? 'auto-height' : 'full-height';
+    const scrollable: boolean = document.body.scrollHeight > window.screen.availHeight;
+    this.heightClass = scrollable ? 'auto-height' : 'full-height';
+    this.footerClass = scrollable ? '' : 'fixed';
   }
 }
