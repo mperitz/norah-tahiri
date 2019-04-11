@@ -1,3 +1,5 @@
+import Content from './Content';
+
 export default interface Project {
   id: number,
   src: string,
@@ -6,4 +8,7 @@ export default interface Project {
   isDefault: boolean,
   mainDescription: string,
   client: string,
+  team: string[],
+  role: string,
+  content?: Content[],
 }

@@ -1,7 +1,7 @@
 <div class="full-width-flex-container h100">
   <div
     class="main-image"
-    [style.backgroundImage]="imageUrl"
+    [style.backgroundImage]="getImageUrl(project.src)"
   >
   </div>
   <div class="main-description-container">
@@ -22,17 +22,64 @@
 <div class="full-width-flex-container" [style.background]="project.color + '7a'">
   <div class="detail-half">
     <div class="detail-text-container">
-      <p class="detail-title-text">Project Brief</p>
-      <p class="detail-subtitle-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="detail-title-text">Team</p>
+      <p
+        class="detail-subtitle-text"
+        *ngFor="let member of project.team"
+      >
+        {{member}}
+      </p>
     </div>
   </div>
   <div class="detail-half">
     <div class="detail-text-container">
       <p class="detail-title-text">Role</p>
-      <p class="detail-subtitle-text">Art Director & Designer</p>
+      <p class="detail-subtitle-text">{{project.role}}</p>
     </div>
     <div class="detail-text-container">
       <div class="visit-button" [style.background]="project.color">VIEW PROJECT</div>
     </div>
   </div>
+</div>
+
+<div class="drag-carousel-container">CAROUSEL WILL GO HERE</div>
+
+<ng-template ngFor let-content [ngForOf]="project.content">
+  <ng-template [ngIf]="content.type === 'video'">
+    <div class="content-container">
+      <app-video [videoId]="content.videoId" [addVideo]="addVideo"></app-video>
+    </div>
+  </ng-template>
+  <ng-template [ngIf]="content.type === 'image'">
+    <div class="content-container image-container">
+      <div
+        class="content-image"
+        [style.backgroundImage]="getImageUrl(content.src)"
+        [style.paddingBottom]="getPaddingPercent(content.paddingPercentage)"
+      ></div>
+    </div>
+  </ng-template>
+  <ng-template [ngIf]="content.type === 'text'">
+    <div class="content-container">
+      <div
+        class="content-text"
+      >
+        <p *ngFor="let text of content.text" [ngClass]="getTextClass(text.type)">{{text.value}}</p>
+      </div>
+    </div>
+  </ng-template>
+</ng-template>
+
+<div class="footer-container">
+  <a routerLink="/design" class="footer-half left" [style.background]="project.color">
+    <p class="footer-text-main">Back to Portfolio</p>
+  </a>
+  <a
+    [href]="'/design/' + nextProject.id"
+    class="footer-half right"
+    [style.background]="nextProject.color"
+  >
+    <p class="footer-text-main">Next Project</p>
+    <p class="footer-text-sub">{{nextProject.name.toUpperCase()}}</p>
+  </a>
 </div>

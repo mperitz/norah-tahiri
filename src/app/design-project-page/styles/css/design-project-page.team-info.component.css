@@ -1,0 +1,46 @@
+
+.detail-half {
+  width: 50%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detail-text-container {
+  height: 50%;
+  padding: 0 70px;
+}
+
+.detail-title-text {
+  font-family: TiemposFine;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #363636;
+  margin-bottom: 7px;
+}
+
+.detail-subtitle-text {
+  font-family: TiemposText;
+  font-size: 16px;
+  line-height: 1.44;
+  letter-spacing: 1px;
+  color: #363636;
+}
+
+.visit-button {
+  height: 50px;
+  width: 150px;
+  font-family: Oswald;
+  letter-spacing: 0.75px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

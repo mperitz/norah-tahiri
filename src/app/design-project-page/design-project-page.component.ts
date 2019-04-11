@@ -7,10 +7,20 @@ import designProjects from 'src/data/design-projects';
 @Component({
   selector: 'design-project-page',
   templateUrl: './design-project-page.component.html',
-  styleUrls: ['./design-project-page.component.css']
+  styleUrls: [
+    './styles/css/design-project-page.header.component.css',
+    './styles/css/design-project-page.team-info.component.css',
+    './styles/css/design-project-page.carousel.component.css',
+    './styles/css/design-project-page.content.component.css',
+    './styles/css/design-project-page.footer.component.css',
+  ]
 })
 export class DesignProjectPageComponent implements OnInit {
-  project: Project;
+  public project: Project;
+  public nextProject: Project;
+  public videoPlayerInfo: any[] = [];
+  public iframeScriptId: string = 'youtube-iframe-api';
+
   private sub: Subscription;
 
   constructor(
@@ -19,16 +29,64 @@ export class DesignProjectPageComponent implements OnInit {
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(({ id }) => {
-      this.project = designProjects.find((project) => project.id === +id);
-      console.log(this.project)
+      designProjects.forEach((project, index) => {
+        if (project.id === +id) {
+          this.project = project;
+          this.nextProject = designProjects[(index + 1) % designProjects.length];
+        }
+      });
+      if (window['onYouTubeIframeAPIReady']) this.createPlayers();
+      else {
+        this.setUpVideoPlayers();
+        this.initVideoScript();
+      }
     });
   }
 
   ngOnDestroy() {
     this.sub.unsubscribe();
+    document.getElementById(this.iframeScriptId).remove();
   }
 
-  get imageUrl(): string {
-    return `url(${this.project.src})`;
+  initVideoScript() {
+    const tag: any = document.createElement('script');
+    tag.id = this.iframeScriptId;
+    tag.src = 'https://www.youtube.com/iframe_api';
+    const firstScriptTag: any = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  }
+
+  setUpVideoPlayers() {
+    window['onYouTubeIframeAPIReady'] = () => {
+      this.createPlayers();
+    }
+  }
+
+  addVideo = (videoInfo: object) => {
+    this.videoPlayerInfo.push(videoInfo);
+  }
+
+  createPlayers() {
+    this.videoPlayerInfo.forEach((info) => {
+      this.createPlayer(info);
+    });
+  }
+
+  createPlayer(videoInfo: any) {
+    return new window['YT'].Player(`player-${videoInfo.videoId}`, videoInfo);
+  }
+
+  getImageUrl(src): string {
+    return `url(${src})`;
+  }
+
+  getPaddingPercent(percent: number): string {
+    return `${percent}%`;
+  }
+
+  getTextClass(type: string): string {
+    if (type === 'header') return 'text text-header';
+    else if (type === 'listItem') return 'text-body';
+    return 'text text-body';
   }
 }

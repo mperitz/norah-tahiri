@@ -1,0 +1,45 @@
+.footer-container {
+  width: 100vw;
+  height: 290px;
+  display: flex;
+  margin-top: 100px;
+}
+
+.footer-half {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.left {
+  border-right: 2px solid white;
+}
+
+.right {
+  border-left: 2px solid white;
+}
+
+.footer-text-main {
+  font-family: TiemposFine;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.footer-text-sub {
+  font-family: Oswald;
+  font-size: 16px;
+  line-height: 3.63;
+  letter-spacing: 0.75px;
+  text-align: center;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}

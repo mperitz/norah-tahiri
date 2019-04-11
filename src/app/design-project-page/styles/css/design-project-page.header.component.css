@@ -1,0 +1,141 @@
+.full-width-flex-container {
+  display: flex;
+  width: 100vw;
+}
+
+.h100 {
+  height: 100vh;
+}
+
+@keyframes main-image-slide-left {
+  from {
+    right: 0;
+  }
+
+  to {
+    right: 50%;
+  }
+}
+
+@keyframes main-description-slide-right {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 50%;
+  }
+}
+
+.main-image {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: main-image-slide-left 1000ms ease-in-out forwards;
+}
+
+@keyframes opacity-on {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.main-description-container {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  left: 0;
+  animation: main-description-slide-right 1000ms ease-in-out forwards, opacity-on 300ms linear 1000ms forwards;
+  opacity: 0;
+}
+
+.main-text-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor {
+  height: 33.333333%;
+  align-items: flex-start;
+}
+
+.description {
+  height: 66.666667%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dark-text {
+  color: #363636;
+}
+
+.light-text {
+  color: #5b5b5b;
+}
+
+.sponsor-text-top {
+  font-family: Oswald;
+  letter-spacing: 0.75px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.name-text {
+  font-family: TiemposFine;
+  letter-spacing: 1px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description-text {
+  font-family: TiemposText;
+  font-size: 18px;
+  line-height: 1.44;
+  letter-spacing: 1px;
+  padding: 0 10%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+.scroll-line-container {
+  position: relative;
+  bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-text {
+  font-family: Oswald;
+  letter-spacing: 0.75px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2.08;
+  text-align: center;
+  color: #88898a;
+  width: 80px;
+  transform: rotate(-90deg);
+}
+
+.scroll-line {
+  width: 2px;
+  height: 169px;
+  background: #363636;
+  margin-top: 20px;
+}
