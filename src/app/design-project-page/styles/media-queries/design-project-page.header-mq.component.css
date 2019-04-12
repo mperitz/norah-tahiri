@@ -1,0 +1,92 @@
+@media screen and (orientation: portrait) {
+  .portrait {
+    display: block;
+  }
+
+  .back-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+  }
+
+  .portrait-back {
+    font-family: Oswald;
+    font-size: 16px;
+    line-height: 3.63;
+    letter-spacing: 0.75px;
+    text-align: center;
+    color: #363636;
+  }
+
+  .full-width-flex-container {
+    flex-direction: column;
+  }
+
+  .full-width-flex-container.h100 {
+    display: none;
+  }
+
+  .portrait-main-image {
+    height: 80vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .portrait-main-description-container {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sponsor-text-top {
+    margin-top: 8px;
+  }
+
+  .line {
+    width: 2px;
+    height: 50px;
+    position: relative;
+    background: #363636;
+    margin: 0 auto;
+  }
+
+  .description-text {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 500px) {
+    .portrait {
+      padding-top: 50px;
+    }
+
+    .back-container {
+      display: none;
+    }
+
+    .portrait-main-image {
+      width: 100%;
+      height: 0;
+      padding-top: 112.35%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .name-text {
+      font-size: 24px;
+    }
+
+    .sponsor-text-top, .description-text {
+      font-size: 14px;
+    }
+
+    .portrait-main-description-container {
+      margin-top: 24px;
+    }
+  }
+}

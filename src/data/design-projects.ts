@@ -14,6 +14,7 @@ const designProjects: Array<Project> = [
     isDefault: false,
     mainDescription: 'Matter Unlimited partnered with ESPN and the Obama Foundation / MBKA to create a campaign urging young Americans to become allies and join the fight against the injustices our boys and young men of color face. We launched a spot “we-are-the-ones” with an accompanying digital campaign introducing the “The Keepers’ Code”, a guide created by young men of color around the nation for allies to live by.',
     client: 'The Obama Foundation',
+    href: 'https://www.obama.org/mbka/mentor/',
     team: [
       'Matter Unlimited - Agency',
       'Omar Silwany - Creative Director',
@@ -126,6 +127,7 @@ const designProjects: Array<Project> = [
     isDefault: false,
     mainDescription: 'The redesign of Scholastic’s Next Step Guided Reading Assessment software was an opportunity to transform a well-loved but outdated resource that numerious teachers considered vital to understanding and supporting their students’ ELA skills.',
     client: 'Scholastic',
+    href: 'http://teacher.scholastic.com/products/Next-Step-Guided-Reading-Assessment/',
     team: [
       'Backpack Interactive - Studio',
       'Miriam Kassel - Art Director',
@@ -200,6 +202,7 @@ const designProjects: Array<Project> = [
     isDefault: false,
     mainDescription: 'Matter Unlimited created a fun, animated spot for LiveOnNY encouraging people to share the      by signing up to become an organ donor. We wrote a catchy anthem and created unique, animated organs to drive the campaign and help mitigate the “ick” factor that so often taints conversations about organ donation.',
     client: 'LIVEONNY',
+    href: 'https://www.facebook.com/LiveOnNewYork/',
     team: [
       'Matter Unlimited - Agency',
       'Gordei - Illustration & Animation',
@@ -284,6 +287,7 @@ const designProjects: Array<Project> = [
     isDefault: false,
     mainDescription: 'Matter Unlimited was tasked with redesigning the LiveOnNY website and developing new media content to establish LiveOnNY as the trusted organizational authority on organ donation. We designed a new modular website with a narrative-driven structure to faciliate exploration and inspiration. We also created a new video series, infographics, and photos for the site. ',
     client: 'LIVEONNY',
+    href: 'https://www.liveonny.org/',
     team: [
       'Matter Unlimited - Agency',
       'Maddy Talias - Director/Photographer',
@@ -388,6 +392,7 @@ const designProjects: Array<Project> = [
     isDefault: false,
     mainDescription: 'SciStarter is an online community platform that provides thousands of formal and informal science and research projects for citizens to take part in. They asked us to help design a new portal where their institutional partners could integrate SciStarter projects in to their curriculum, club activities and events.',
     client: 'SCISTARTER',
+    href: 'https://scistarter.org/dashboard',
     team: ['Backpack Interactive - Agency'],
     role: 'UX / UI Designer',
     content: [
@@ -414,7 +419,7 @@ const designProjects: Array<Project> = [
       {
         type: Type.Image,
         src: '../assets/images/SciStarter/Body/scistarter-8.png',
-        paddingPercentage: calcRatio(645, 1032),
+        paddingPercentage: calcRatio(445, 1032),
       },
     ]
   },
@@ -426,6 +431,7 @@ const designProjects: Array<Project> = [
     isDefault: false,
     mainDescription: ' I designed a new logo and visual identity for a small, northwestern bike shop called The Bike Republic. I was also tasked with designing a new app for their shop.',
     client: 'THE BIKE REPUBLIC',
+    href: '',
     team: ['Norah Tahiri Design'],
     role: 'Art Director & UX/UI Designer',
     content: [
@@ -476,6 +482,7 @@ export const defaultDesignProject: Project = {
   isDefault: true,
   mainDescription: '',
   client: '',
+  href: '',
   team: [],
   role: '',
 };

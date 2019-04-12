@@ -10,9 +10,9 @@
       <!-- <a routerLink="/design" class="row-container">
         <p class="content-text">SEE ALL</p>
       </a> -->
-      <div class="row-container" *ngFor="let designProj of designProjects">
+      <a [routerLink]="'/design/' + designProj.id" class="row-container" *ngFor="let designProj of designProjects">
         <p class="content-text">{{designProj.name}}</p>
-      </div>
+      </a>
     </div>
   </ng-template>
   <div class="row">

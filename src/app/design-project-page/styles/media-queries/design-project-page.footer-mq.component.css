@@ -1,0 +1,27 @@
+@media screen and (orientation: portrait) {
+  .footer-container {
+    height: 165px;
+  }
+
+  .footer-text-main {
+    font-size: 24px;
+  }
+
+  .footer-text-sub {
+    font-size: 12px;
+  }
+
+  @media (max-width: 500px) {
+    .footer-container {
+      margin-top: 60px;
+    }
+
+    .footer-text-main {
+      font-size: 12px;
+    }
+
+    .footer-text-sub {
+      font-size: 8px;
+    }
+  }
+}

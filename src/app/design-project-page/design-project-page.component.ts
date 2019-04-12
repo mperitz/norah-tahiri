@@ -9,10 +9,14 @@ import designProjects from 'src/data/design-projects';
   templateUrl: './design-project-page.component.html',
   styleUrls: [
     './styles/css/design-project-page.header.component.css',
+    './styles/media-queries/design-project-page.header-mq.component.css',
     './styles/css/design-project-page.team-info.component.css',
+    './styles/media-queries/design-project-page.team-info-mq.component.css',
     './styles/css/design-project-page.carousel.component.css',
     './styles/css/design-project-page.content.component.css',
+    './styles/media-queries/design-project-page.content-mq.component.css',
     './styles/css/design-project-page.footer.component.css',
+    './styles/media-queries/design-project-page.footer-mq.component.css',
   ]
 })
 export class DesignProjectPageComponent implements OnInit {
@@ -35,11 +39,8 @@ export class DesignProjectPageComponent implements OnInit {
           this.nextProject = designProjects[(index + 1) % designProjects.length];
         }
       });
-      if (window['onYouTubeIframeAPIReady']) this.createPlayers();
-      else {
-        this.setUpVideoPlayers();
-        this.initVideoScript();
-      }
+      this.setUpVideoPlayers();
+      this.initVideoScript();
     });
   }
 

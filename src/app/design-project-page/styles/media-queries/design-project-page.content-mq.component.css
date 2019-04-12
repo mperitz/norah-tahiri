@@ -1,0 +1,28 @@
+@media screen and (orientation: portrait) {
+  .content-text {
+    width: 70%;
+  }
+
+  .content-container {
+    padding: 0 60px;
+  }
+
+  @media (max-width: 500px) {
+    .content-container {
+      padding: 0 20px;
+      margin-top: 50px;
+    }
+
+    .text-header {
+      font-size: 22px;
+    }
+
+    .text-body {
+      font-size: 14px;
+    }
+
+    .content-text {
+      width: 90%;
+    }
+  }
+}

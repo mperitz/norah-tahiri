@@ -11,4 +11,5 @@ export default interface Project {
   team: string[],
   role: string,
   content?: Content[],
+  href?: string,
 }

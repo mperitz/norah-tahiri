@@ -19,6 +19,23 @@
   </div>
 </div>
 
+<div class="portrait">
+  <div class="back-container">
+    <a href="/design" class="portrait-back">BACK TO PORTFOLIO</a>
+  </div>
+  <div
+    class="portrait-main-image"
+    [style.backgroundImage]="getImageUrl(project.src)"
+  >
+  </div>
+  <div class="portrait-main-description-container">
+    <p class="name-text dark-text">{{project.name}}</p>
+    <p class="sponsor-text-top dark-text">{{project.client.toUpperCase()}}</p>
+  </div>
+  <div class="line"></div>
+  <p class="description-text light-text">{{project.mainDescription}}</p>
+</div>
+
 <div class="full-width-flex-container" [style.background]="project.color + '7a'">
   <div class="detail-half">
     <div class="detail-text-container">
@@ -37,7 +54,14 @@
       <p class="detail-subtitle-text">{{project.role}}</p>
     </div>
     <div class="detail-text-container">
-      <div class="visit-button" [style.background]="project.color">VIEW PROJECT</div>
+      <a
+        [href]="project.href"
+        target="_blank"
+        class="visit-button"
+        [style.background]="project.color"
+      >
+        VIEW PROJECT
+      </a>
     </div>
   </div>
 </div>
@@ -71,11 +95,12 @@
 </ng-template>
 
 <div class="footer-container">
-  <a routerLink="/design" class="footer-half left" [style.background]="project.color">
+  <a href="/design" class="footer-half left" [style.background]="project.color">
     <p class="footer-text-main">Back to Portfolio</p>
   </a>
   <a
     [href]="'/design/' + nextProject.id"
+    target="_top"
     class="footer-half right"
     [style.background]="nextProject.color"
   >
