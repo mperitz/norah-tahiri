@@ -22,6 +22,7 @@ import designProjects from 'src/data/design-projects';
 export class DesignProjectPageComponent implements OnInit {
   public project: Project;
   public nextProject: Project;
+  public prevProject: Project;
   public videoPlayerInfo: any[] = [];
   public iframeScriptId: string = 'youtube-iframe-api';
 
@@ -37,6 +38,7 @@ export class DesignProjectPageComponent implements OnInit {
         if (project.id === +id) {
           this.project = project;
           this.nextProject = designProjects[(index + 1) % designProjects.length];
+          this.prevProject = designProjects[index - 1 === -1 ? designProjects.length - 1 : index -1];
         }
       });
       this.setUpVideoPlayers();
@@ -89,5 +91,17 @@ export class DesignProjectPageComponent implements OnInit {
     if (type === 'header') return 'text text-header';
     else if (type === 'listItem') return 'text-body';
     return 'text text-body';
+  }
+
+  getDesignLink(id: number) {
+    return `/design/${id}`
+  }
+
+  get nextProjectHref() {
+    return this.getDesignLink(this.nextProject.id);
+  }
+
+  get prevProjectHref() {
+    return this.getDesignLink(this.prevProject.id);
   }
 }

@@ -1,3 +1,15 @@
+<div class="corner-nav">
+  <a class="nav-a" href="/design">
+    <div class="nav x"></div>
+  </a>
+  <a class="nav-a" [href]="prevProjectHref" target="_top">
+    <div class="nav back"></div>
+  </a>
+  <a class="nav-a" [href]="nextProjectHref" target="_top">
+    <div class="nav forward"></div>
+  </a>
+</div>
+
 <div class="full-width-flex-container h100">
   <div
     class="main-image"
@@ -57,7 +69,7 @@
       <a
         [href]="project.href"
         target="_blank"
-        class="visit-button"
+        [ngClass]="'visit-button' + !project.href ? ' hidden' : ''"
         [style.background]="project.color"
       >
         VIEW PROJECT
@@ -99,7 +111,7 @@
     <p class="footer-text-main">Back to Portfolio</p>
   </a>
   <a
-    [href]="'/design/' + nextProject.id"
+    [href]="nextProjectHref"
     target="_top"
     class="footer-half right"
     [style.background]="nextProject.color"
