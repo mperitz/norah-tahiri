@@ -7,14 +7,20 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-photo-detail-page',
   templateUrl: './photo-detail-page.component.html',
-  styleUrls: ['./photo-detail-page.component.css']
+  styleUrls: [
+    './css/photo-detail-page.component.css',
+    './css/photo-detail-page-media-queries.component.css',
+  ]
 })
 export class PhotoDetailPageComponent implements OnInit {
   public project: Project;
   public nextProject: Project;
   public currentPhotoIdx: number = 0;
   public imageWidths: string[] = [];
-  public showProjectInfo: boolean = true;
+  public showProjectInfo: boolean = false;
+  public startX: number;
+  public draggable: boolean = false;
+  public minSwipeDistance: number = 100;
 
   private sub: Subscription;
 
@@ -38,6 +44,25 @@ export class PhotoDetailPageComponent implements OnInit {
   ngOnDestroy() {
     this.sub.unsubscribe();
     window.removeEventListener('resize', this.getImageWidths);
+  }
+
+  onTouchStart(evt) {
+    this.startX = evt.touches[0].screenX;
+    this.draggable = true;
+  }
+
+  onTouchEnd(evt) {
+    const { screenX } = evt.changedTouches[0];
+    if (screenX - this.startX < -this.minSwipeDistance && this.currentPhotoIdx < this.project.photos.length - 1) this.carouselRight();
+    else if (screenX - this.startX > this.minSwipeDistance && this.currentPhotoIdx > 1) this.carouselLeft();
+    this.draggable = false;
+  }
+
+  getCurrentTranslate(): number {
+    const carouselContainer = document.getElementById('carousel-container');
+    const { transform } = carouselContainer.style;
+    const end = transform.slice(11);
+    return +end.split(/\%/)[0];
   }
 
   getImageUrl(src) {

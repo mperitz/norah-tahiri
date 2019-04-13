@@ -1,0 +1,65 @@
+@media (orientation: portrait) {
+  .outer {
+    height: 30%;
+  }
+
+  .carousel-photo {
+    height: 40vh;
+  }
+
+  .outer-top {
+    align-items: flex-start;
+  }
+
+  .outer-bottom {
+    align-items: flex-end;
+  }
+
+  .top {
+    margin-top: 70px;
+  }
+
+  .bottom {
+    margin-bottom: 70px;
+  }
+
+  .counter {
+    margin: -25vh auto;
+  }
+
+  @media (max-width: 500px) {
+    .photo-container {
+      padding-top: 50px;
+      height: calc(100vh - 50px);
+    }
+
+    .title-text {
+      font-size: 18px;
+    }
+
+    .info-text {
+      font-size: 10px;
+      line-height: 2.5;
+    }
+
+    .top {
+      margin-top: 60px;
+    }
+
+    .bottom {
+      margin-bottom: 35px;
+    }
+
+    .counter {
+      margin: -15vh auto;
+    }
+
+    .counter-text {
+      font-size: 16px;
+    }
+
+    .arrow-top {
+      display: none;
+    }
+  }
+}

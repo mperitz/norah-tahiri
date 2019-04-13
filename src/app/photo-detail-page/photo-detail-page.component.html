@@ -1,14 +1,20 @@
-<i [ngClass]="rightArrowClass" (click)="carouselRight()"></i>
-<i [ngClass]="leftArrowClass" (click)="carouselLeft()"></i>
+<i [ngClass]="'arrow-top ' + rightArrowClass" (click)="carouselRight()"></i>
+<i [ngClass]="'arrow-top ' + leftArrowClass" (click)="carouselLeft()"></i>
 <div class="photo-container">
-  <div class="outer">
-    <p class="title-text left">{{project.name}}</p>
-    <div class="info-text-anchor right" (click)="toggleProjectInfo()">
+  <div class="outer outer-top">
+    <p class="title-text left top">{{project.name}}</p>
+    <div class="info-text-anchor right top" (click)="toggleProjectInfo()">
       <p class="info-text">PROJECT INFO</p>
     </div>
   </div>
   <div id="carousel" class="inner">
-    <div id="carousel-container" class="carousel-container">
+    <div
+      id="carousel-container"
+      class="carousel-container"
+      (touchstart)="onTouchStart($event)"
+      (touchend)="onTouchEnd($event)"
+      style="transform: translateX(0%)"
+    >
       <div
         *ngFor="let photo of project.photos; let i = index"
         class="carousel-item"
@@ -22,12 +28,14 @@
     </div>
   </div>
 
-  <div class="outer">
-    <a routerLink="/design" class="anchor left">
+  <div class="outer outer-bottom">
+    <a routerLink="/design" class="anchor left bottom">
       <p class="info-text">BACK TO PORTFOLIO</p>
     </a>
-    <p class="counter-text">{{currentPhotoIdx + 1}}/{{project.photos.length}}</p>
-    <a [routerLink]="'/photography/' + nextProject.id" class="anchor right">
+    <div class="counter">
+      <p class="counter-text">{{currentPhotoIdx + 1}}/{{project.photos.length}}</p>
+    </div>
+    <a [routerLink]="'/photography/' + nextProject.id" class="anchor right bottom">
       <p class="info-text">NEXT PROJECT</p>
     </a>
   </div>
