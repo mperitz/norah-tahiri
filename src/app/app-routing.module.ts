@@ -6,6 +6,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AboutComponent } from './about/about.component';
 import { MenuComponent } from './menu/menu.component';
 import { DesignProjectPageComponent } from './design-project-page/design-project-page.component';
+import { PhotoDetailPageComponent } from './photo-detail-page/photo-detail-page.component';
 
 const routes: Routes = [
   {
@@ -14,13 +15,17 @@ const routes: Routes = [
     data: { type: 'design' },
   },
   {
+    path: 'design/:id',
+    component: DesignProjectPageComponent,
+  },
+  {
     path: 'photography',
     component: HomeComponent,
     data: { type: 'photography' },
   },
   {
-    path: 'design/:id',
-    component: DesignProjectPageComponent,
+    path: 'photography/:id',
+    component: PhotoDetailPageComponent,
   },
   {
     path: 'about/:type',

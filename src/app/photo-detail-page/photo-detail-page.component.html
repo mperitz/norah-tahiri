@@ -1,0 +1,34 @@
+<i [ngClass]="rightArrowClass" (click)="carouselRight()"></i>
+<i [ngClass]="leftArrowClass" (click)="carouselLeft()"></i>
+<div class="photo-container">
+  <div class="outer">
+    <p class="title-text left">{{project.name}}</p>
+    <a class="info-text-anchor right">
+      <p class="info-text">PROJECT INFO</p>
+    </a>
+  </div>
+  <div id="carousel" class="inner">
+    <div id="carousel-container" class="carousel-container">
+      <div
+        *ngFor="let photo of project.photos; let i = index"
+        class="carousel-item"
+      >
+        <img
+          class="carousel-photo"
+          [src]="photo.src"
+          [style.width]="photoWidth(i)"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="outer">
+    <a routerLink="/design" class="anchor left">
+      <p class="info-text">BACK TO PORTFOLIO</p>
+    </a>
+    <p class="counter-text">{{currentPhotoIdx + 1}}/{{project.photos.length}}</p>
+    <a [routerLink]="'/photography/' + nextProject.id" class="anchor right">
+      <p class="info-text">NEXT PROJECT</p>
+    </a>
+  </div>
+</div>

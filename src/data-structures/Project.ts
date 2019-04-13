@@ -14,4 +14,5 @@ export default interface Project {
   content?: Content[],
   href?: string,
   carouselImages?: CarouselImage[],
+  photos?: object[],
 }

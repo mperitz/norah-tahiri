@@ -26,9 +26,9 @@
       <!-- <a routerLink="/photography" class="row-container">
         <p class="content-text">SEE ALL</p>
       </a> -->
-      <div class="row-container" *ngFor="let photographyProj of photographyProjects">
+      <a [routerLink]="'/photography/' + photographyProj.id" class="row-container" *ngFor="let photographyProj of photographyProjects">
         <p class="content-text">{{photographyProj.name}}</p>
-      </div>
+      </a>
     </div>
   </ng-template>
   <div class="row">
