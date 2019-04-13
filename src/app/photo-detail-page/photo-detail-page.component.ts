@@ -14,6 +14,7 @@ export class PhotoDetailPageComponent implements OnInit {
   public nextProject: Project;
   public currentPhotoIdx: number = 0;
   public imageWidths: string[] = [];
+  public showProjectInfo: boolean = true;
 
   private sub: Subscription;
 
@@ -75,11 +76,19 @@ export class PhotoDetailPageComponent implements OnInit {
     carouselContainer.style.transform = `translateX(-${this.currentPhotoIdx * 100}%)`;
   }
 
+  toggleProjectInfo(): void {
+    this.showProjectInfo = !this.showProjectInfo;
+  }
+
   get rightArrowClass(): string {
     return `arrow arrow-right${this.currentPhotoIdx === this.project.photos.length - 1 ? ' hidden' : ''}`;
   }
 
   get leftArrowClass(): string {
     return `arrow arrow-left${this.currentPhotoIdx === 0 ? ' hidden' : ''}`;
+  }
+
+  get projectInfoClass(): string {
+    return `project-info${this.showProjectInfo ? '' : ' hidden'}`;
   }
 }

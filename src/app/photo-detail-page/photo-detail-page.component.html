@@ -3,9 +3,9 @@
 <div class="photo-container">
   <div class="outer">
     <p class="title-text left">{{project.name}}</p>
-    <a class="info-text-anchor right">
+    <div class="info-text-anchor right" (click)="toggleProjectInfo()">
       <p class="info-text">PROJECT INFO</p>
-    </a>
+    </div>
   </div>
   <div id="carousel" class="inner">
     <div id="carousel-container" class="carousel-container">
@@ -31,4 +31,10 @@
       <p class="info-text">NEXT PROJECT</p>
     </a>
   </div>
+</div>
+
+<div [ngClass]="projectInfoClass">
+  <p class="project-info-main-text">{{project.name}}</p>
+  <p class="project-info-sub-text">{{project.mainDescription}}</p>
+  <div class="project-info-exit" (click)="toggleProjectInfo()"></div>
 </div>
