@@ -239,6 +239,23 @@ const designProjects: Array<Project> = [
         paddingPercentage: 57.7,
       },
     ],
+    carouselImages: [
+      {
+        src: '../assets/images/NSGRA/Carousel/nsgra_1.png',
+        width: getScaledWidth(716, 450, 450),
+        mobileWidth: getScaledWidth(716, 450, 250),
+      },
+      {
+        src: '../assets/images/NSGRA/Carousel/nsgra_2.png',
+        width: getScaledWidth(361, 450, 450),
+        mobileWidth: getScaledWidth(361, 450, 250),
+      },
+      {
+        src: '../assets/images/NSGRA/Carousel/nsgra_3.png',
+        width: getScaledWidth(764, 450, 450),
+        mobileWidth: getScaledWidth(764, 450, 250),
+      },
+    ],
   },
   {
     id: 3,
@@ -323,7 +340,34 @@ const designProjects: Array<Project> = [
         src: '../assets/images/share-the-love/Body/sharethelove_15.png',
         paddingPercentage: calcRatio(344, 1000),
       },
-    ]
+    ],
+    carouselImages: [
+      {
+        src: '../assets/images/share-the-love/Carousel/sharethelove_1.png',
+        width: getScaledWidth(716, 450, 450),
+        mobileWidth: getScaledWidth(716, 450, 250),
+      },
+      {
+        src: '../assets/images/share-the-love/Carousel/sharethelove_2.png',
+        width: getScaledWidth(764, 450, 450),
+        mobileWidth: getScaledWidth(764, 450, 250),
+      },
+      {
+        src: '../assets/images/share-the-love/Carousel/sharethelove_3.png',
+        width: getScaledWidth(860, 450, 450),
+        mobileWidth: getScaledWidth(860, 450, 250),
+      },
+      {
+        src: '../assets/images/share-the-love/Carousel/sharethelove_4.png',
+        width: getScaledWidth(860, 450, 450),
+        mobileWidth: getScaledWidth(860, 450, 250),
+      },
+      {
+        src: '../assets/images/share-the-love/Carousel/sharethelove_5.png',
+        width: getScaledWidth(860, 450, 450),
+        mobileWidth: getScaledWidth(860, 450, 250),
+      },
+    ],
   },
   {
     id: 4,
@@ -428,7 +472,39 @@ const designProjects: Array<Project> = [
         type: Type.Video,
         videoId: 'mx3JGVuU4GA',
       },
-    ]
+    ],
+    carouselImages: [
+      {
+        src: '../assets/images/stories-of-living-on/Carousel/storiesLiveOn-1.png',
+        width: getScaledWidth(675, 450, 450),
+        mobileWidth: getScaledWidth(675, 450, 250),
+      },
+      {
+        src: '../assets/images/stories-of-living-on/Carousel/storiesLiveOn-2.png',
+        width: getScaledWidth(383, 450, 450),
+        mobileWidth: getScaledWidth(383, 450, 250),
+      },
+      {
+        src: '../assets/images/stories-of-living-on/Carousel/storiesLiveOn-3.png',
+        width: getScaledWidth(750, 500, 450),
+        mobileWidth: getScaledWidth(750, 500, 250),
+      },
+      {
+        src: '../assets/images/stories-of-living-on/Carousel/storiesLiveOn-4.png',
+        width: getScaledWidth(333, 500, 450),
+        mobileWidth: getScaledWidth(333, 500, 250),
+      },
+      {
+        src: '../assets/images/stories-of-living-on/Carousel/storiesLiveOn-5.png',
+        width: getScaledWidth(750, 500, 450),
+        mobileWidth: getScaledWidth(750, 500, 250),
+      },
+      {
+        src: '../assets/images/stories-of-living-on/Carousel/storiesLiveOn-6.png',
+        width: getScaledWidth(333, 500, 450),
+        mobileWidth: getScaledWidth(333, 500, 250),
+      },
+    ],
   },
   {
     id: 5,
@@ -466,6 +542,23 @@ const designProjects: Array<Project> = [
         type: Type.Image,
         src: '../assets/images/SciStarter/Body/scistarter-8.png',
         paddingPercentage: calcRatio(445, 1032),
+      },
+    ],
+    carouselImages: [
+      {
+        src: '../assets/images/SciStarter/Carousel/scistarter-1.png',
+        width: getScaledWidth(716, 450, 450),
+        mobileWidth: getScaledWidth(716, 450, 250),
+      },
+      {
+        src: '../assets/images/SciStarter/Carousel/scistarter-2.png',
+        width: getScaledWidth(383, 450, 450),
+        mobileWidth: getScaledWidth(383, 450, 250),
+      },
+      {
+        src: '../assets/images/SciStarter/Carousel/scistarter-3.png',
+        width: getScaledWidth(383, 450, 450),
+        mobileWidth: getScaledWidth(383, 450, 250),
       },
     ]
   },
@@ -515,6 +608,23 @@ const designProjects: Array<Project> = [
         type: Type.Image,
         src: '../assets/images/bike-republic/Body/bikerepublic-10.png',
         paddingPercentage: calcRatio(600, 1000),
+      },
+    ],
+    carouselImages: [
+      {
+        src: '../assets/images/bike-republic/Carousel/bikerepublic-1.png',
+        width: getScaledWidth(675, 450, 450),
+        mobileWidth: getScaledWidth(675, 450, 250),
+      },
+      {
+        src: '../assets/images/bike-republic/Carousel/bikerepublic-2.png',
+        width: getScaledWidth(300, 450, 450),
+        mobileWidth: getScaledWidth(300, 450, 250),
+      },
+      {
+        src: '../assets/images/bike-republic/Carousel/bikerepublic-3.png',
+        width: getScaledWidth(715, 450, 450),
+        mobileWidth: getScaledWidth(715, 450, 250),
       },
     ]
   },
