@@ -24,5 +24,34 @@
     .content-text {
       width: 90%;
     }
+
+    .drag-line-container {
+      bottom: 45px;
+    }
+  }
+}
+
+@media screen and (orientation: landscape) {
+  @media (max-height: 700px) and (max-width: 900px) {
+    .content-container {
+      padding: 0 20px;
+      margin-top: 50px;
+    }
+
+    .text-header {
+      font-size: 22px;
+    }
+
+    .text-body {
+      font-size: 14px;
+    }
+
+    .content-text {
+      width: 90%;
+    }
+
+    .drag-line-container {
+      bottom: 45px;
+    }
   }
 }

@@ -69,7 +69,7 @@
       <a
         [href]="project.href"
         target="_blank"
-        [ngClass]="'visit-button' + !project.href ? ' hidden' : ''"
+        [ngClass]="buttonClass"
         [style.background]="project.color"
       >
         VIEW PROJECT
@@ -80,6 +80,10 @@
 
 <div class="carousel-wrapper">
   <carousel [project]="project"></carousel>
+  <div class="drag-line-container">
+    <div class="drag-line"></div>
+    <p class="drag-text">DRAG CAROUSEL</p>
+  </div>
 </div>
 
 <ng-template ngFor let-content [ngForOf]="project.content">

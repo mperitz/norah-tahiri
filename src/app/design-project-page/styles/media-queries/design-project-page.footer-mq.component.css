@@ -25,3 +25,15 @@
     }
   }
 }
+
+@media (orientation: landscape) {
+  @media (max-height: 700px) and (max-width: 900px) {
+    .footer-text-main {
+      font-size: 24px;
+    }
+
+    .footer-text-sub {
+      font-size: 16px;
+    }
+  }
+}

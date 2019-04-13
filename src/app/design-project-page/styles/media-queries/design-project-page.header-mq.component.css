@@ -3,6 +3,10 @@
     display: block;
   }
 
+  .corner-nav {
+    display: none;
+  }
+
   .back-container {
     display: flex;
     justify-content: center;
@@ -87,6 +91,52 @@
 
     .portrait-main-description-container {
       margin-top: 24px;
+    }
+  }
+}
+
+@media (orientation: landscape) {
+  @media (max-height: 700px) and (max-width: 900px) {
+    .corner-nav {
+      display: none;
+    }
+
+    .sponsor-text-top, .description-text {
+      font-size: 14px;
+    }
+
+    .sponsor-text-top {
+      margin-top: 15px;
+    }
+
+    .name-text {
+      font-size: 24px;
+    }
+
+    .main-text-container {
+      height: 25%;
+    }
+
+    .description {
+      height: 75%;
+    }
+
+    .description-text {
+      font-size: 12px;
+    }
+
+    .scroll-line-container {
+      display: none;
+    }
+  }
+
+  @media (max-height: 330px) and (max-width: 575px) {
+    .main-text-container {
+      height: 12%;
+    }
+
+    .description {
+      height: 88%;
     }
   }
 }

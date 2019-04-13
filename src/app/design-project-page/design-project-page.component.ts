@@ -96,11 +96,15 @@ export class DesignProjectPageComponent implements OnInit {
     return `/design/${id}`
   }
 
-  get nextProjectHref() {
+  get buttonClass(): string {
+    return `visit-button${!!this.project.href ? '' : ' hidden'}`;
+  }
+
+  get nextProjectHref(): string {
     return this.getDesignLink(this.nextProject.id);
   }
 
-  get prevProjectHref() {
+  get prevProjectHref(): string {
     return this.getDesignLink(this.prevProject.id);
   }
 }

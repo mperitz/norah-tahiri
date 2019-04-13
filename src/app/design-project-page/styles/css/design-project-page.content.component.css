@@ -46,3 +46,30 @@
   overflow-x: hidden;
   width: 100vw;
 }
+
+.drag-line-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  bottom: 60px;
+  left: 0px;
+  width: 130px;
+}
+
+.drag-text {
+  font-family: Oswald;
+  letter-spacing: 0.75px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2.08;
+  text-align: center;
+  color: #363636;
+  margin-left: 6px;
+}
+
+.drag-line {
+  width: 40px;
+  height: 1px;
+  background: #363636;
+}
