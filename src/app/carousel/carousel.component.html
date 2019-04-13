@@ -1,0 +1,16 @@
+<div [id]="carouselId" class="carousel-container" style="left: 0px">
+  <div
+    *ngFor="let image of project.carouselImages"
+    [style.backgroundImage]="getImgUrl(image.src)"
+    [style.width]="image[isMobile ? 'mobileWidth' : 'width'] + 'px'"
+    [style.flexBasis]="image[isMobile ? 'mobileWidth' : 'width'] + 'px'"
+    class="carousel-item"
+    (mousedown)="toggleDraggableOn($event)"
+    (touchstart)="toggleDraggableOn($event)"
+    (mouseup)="toggleDraggableOff()"
+    (touchend)="toggleDraggableOff()"
+    (mousemove)="drag($event)"
+    (touchmove)="drag($event)"
+    (mouseout)="toggleDraggableOff()"
+  ></div>
+</div>

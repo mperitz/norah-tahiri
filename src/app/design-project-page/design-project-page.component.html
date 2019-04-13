@@ -78,7 +78,9 @@
   </div>
 </div>
 
-<div class="drag-carousel-container">CAROUSEL WILL GO HERE</div>
+<div class="carousel-wrapper">
+  <carousel [project]="project"></carousel>
+</div>
 
 <ng-template ngFor let-content [ngForOf]="project.content">
   <ng-template [ngIf]="content.type === 'video'">

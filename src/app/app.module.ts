@@ -13,6 +13,7 @@ import { MenuComponent } from './menu/menu.component';
 import { MobileContentListComponent } from './mobile-content-list/mobile-content-list.component';
 import { DesignProjectPageComponent } from './design-project-page/design-project-page.component';
 import { VideoComponent } from './video/video.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { VideoComponent } from './video/video.component';
     MobileContentListComponent,
     DesignProjectPageComponent,
     VideoComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,

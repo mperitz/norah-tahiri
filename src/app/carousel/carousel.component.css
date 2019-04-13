@@ -1,0 +1,23 @@
+.carousel-container {
+  height: 450px;
+  width: auto;
+  display: flex;
+  position: relative;
+}
+
+.carousel-item {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 450px;
+  flex: 1 0;
+}
+
+@media screen and (orientation: portrait) and (max-width: 500px) {
+  .carousel-container {
+    height: 250px;
+  }
+
+  .carousel-item {
+    height: 250px;
+  }
+}

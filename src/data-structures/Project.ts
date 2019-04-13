@@ -1,4 +1,5 @@
 import Content from './Content';
+import CarouselImage from './CarouselImage';
 
 export default interface Project {
   id: number,
@@ -12,4 +13,5 @@ export default interface Project {
   role: string,
   content?: Content[],
   href?: string,
+  carouselImages?: CarouselImage[],
 }

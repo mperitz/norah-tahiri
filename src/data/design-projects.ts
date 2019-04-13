@@ -5,6 +5,10 @@ function calcRatio(width, height) {
   return 100 * (width / height);
 }
 
+function getScaledWidth(width, height, factor) {
+  return (width / height) * factor;
+}
+
 const designProjects: Array<Project> = [
   {
     id: 1,
@@ -116,6 +120,48 @@ const designProjects: Array<Project> = [
         type: Type.Image,
         src: '../assets/images/we-are-the-ones/Body/wearetheones_17.png',
         paddingPercentage: 43,
+      },
+    ],
+    carouselImages: [
+      {
+        src: '../assets/images/we-are-the-ones/Carousel/wearetheones_1.png',
+        width: getScaledWidth(675, 450, 450),
+        mobileWidth: getScaledWidth(675, 450, 250),
+      },
+      {
+        src: '../assets/images/we-are-the-ones/Carousel/wearetheones_2.png',
+        width: getScaledWidth(400, 450, 450),
+        mobileWidth: getScaledWidth(400, 450, 250),
+      },
+      {
+        src: '../assets/images/we-are-the-ones/Carousel/wearetheones_3.jpg',
+        width: getScaledWidth(2000, 2848, 450),
+        mobileWidth: getScaledWidth(2000, 2848, 250),
+      },
+      {
+        src: '../assets/images/we-are-the-ones/Carousel/wearetheones_4.jpg',
+        width: getScaledWidth(1799, 2000, 450),
+        mobileWidth: getScaledWidth(1799, 2000, 250),
+      },
+      {
+        src: '../assets/images/we-are-the-ones/Carousel/wearetheones_5.jpg',
+        width: getScaledWidth(1404, 2000, 450),
+        mobileWidth: getScaledWidth(1404, 2000, 250),
+      },
+      {
+        src: '../assets/images/we-are-the-ones/Carousel/wearetheones_6.jpg',
+        width: getScaledWidth(1404, 2000, 450),
+        mobileWidth: getScaledWidth(1404, 2000, 250),
+      },
+      {
+        src: '../assets/images/we-are-the-ones/Carousel/wearetheones_7.jpg',
+        width: getScaledWidth(2000, 1627, 450),
+        mobileWidth: getScaledWidth(2000, 1627, 250),
+      },
+      {
+        src: '../assets/images/we-are-the-ones/Carousel/wearetheones_8.jpg',
+        width: getScaledWidth(1405, 2000, 450),
+        mobileWidth: getScaledWidth(1405, 2000, 250),
       },
     ],
   },

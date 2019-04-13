@@ -12,7 +12,6 @@ import designProjects from 'src/data/design-projects';
     './styles/media-queries/design-project-page.header-mq.component.css',
     './styles/css/design-project-page.team-info.component.css',
     './styles/media-queries/design-project-page.team-info-mq.component.css',
-    './styles/css/design-project-page.carousel.component.css',
     './styles/css/design-project-page.content.component.css',
     './styles/media-queries/design-project-page.content-mq.component.css',
     './styles/css/design-project-page.footer.component.css',
