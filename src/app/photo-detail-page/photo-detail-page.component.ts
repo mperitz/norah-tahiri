@@ -17,6 +17,7 @@ export class PhotoDetailPageComponent implements OnInit {
   public nextProject: Project;
   public currentPhotoIdx: number = 0;
   public imageWidths: string[] = [];
+  public imageHeights: number[] = [];
   public showProjectInfo: boolean = false;
   public startX: number;
   public draggable: boolean = false;
@@ -37,6 +38,7 @@ export class PhotoDetailPageComponent implements OnInit {
         }
       });
       this.getImageWidths();
+      this.getImageHeights();
     });
     window.addEventListener('resize', this.getImageWidths);
   }
@@ -46,31 +48,16 @@ export class PhotoDetailPageComponent implements OnInit {
     window.removeEventListener('resize', this.getImageWidths);
   }
 
-  onTouchStart(evt) {
-    this.startX = evt.touches[0].screenX;
-    this.draggable = true;
-  }
-
-  onTouchEnd(evt) {
-    const { screenX } = evt.changedTouches[0];
-    if (screenX - this.startX < -this.minSwipeDistance && this.currentPhotoIdx < this.project.photos.length - 1) this.carouselRight();
-    else if (screenX - this.startX > this.minSwipeDistance && this.currentPhotoIdx > 1) this.carouselLeft();
-    this.draggable = false;
-  }
-
-  getCurrentTranslate(): number {
-    const carouselContainer = document.getElementById('carousel-container');
-    const { transform } = carouselContainer.style;
-    const end = transform.slice(11);
-    return +end.split(/\%/)[0];
-  }
-
   getImageUrl(src) {
     return `url(${src})`;
   }
 
   getImageWidths = (): void => {
     this.imageWidths = this.project.photos.map(({ ratio }: any) => this.getWidth(ratio));
+  }
+
+  getImageHeights = (): void => {
+    this.imageHeights = this.project.photos.map(({ ratio }: any) => document.body.clientWidth / ratio);
   }
 
   getWidth(ratio: number): string {
@@ -86,6 +73,22 @@ export class PhotoDetailPageComponent implements OnInit {
     return this.imageWidths[idx];
   }
 
+  photoWidthMobile(idx: number): string {
+    return `${this.imageHeights[idx]}px`;
+  }
+
+  onTouchStart(evt) {
+    this.startX = evt.touches[0].screenX;
+    this.draggable = true;
+  }
+
+  onTouchEnd(evt) {
+    const { screenX } = evt.changedTouches[0];
+    if (screenX - this.startX < -this.minSwipeDistance && this.currentPhotoIdx < this.project.photos.length - 1) this.carouselRight();
+    else if (screenX - this.startX > this.minSwipeDistance && this.currentPhotoIdx > 0) this.carouselLeft();
+    this.draggable = false;
+  }
+
   carouselRight(): void {
     this.currentPhotoIdx++;
     this.move();
@@ -97,8 +100,8 @@ export class PhotoDetailPageComponent implements OnInit {
   }
 
   move(): void {
-    const carouselContainer = document.getElementById('carousel-container');
-    carouselContainer.style.transform = `translateX(-${this.currentPhotoIdx * 100}%)`;
+    const carouselContainer = document.getElementById(`carousel-container${document.body.clientWidth <= 500 ? '-mobile' : ''}`);
+    carouselContainer.style.transform = `translateX(-${this.currentPhotoIdx * 100}vw)`;
   }
 
   toggleProjectInfo(): void {
@@ -106,11 +109,11 @@ export class PhotoDetailPageComponent implements OnInit {
   }
 
   get rightArrowClass(): string {
-    return `arrow arrow-right${this.currentPhotoIdx === this.project.photos.length - 1 ? ' hidden' : ''}`;
+    return `arrow arrow-right${this.currentPhotoIdx === this.project.photos.length - 1 ? ' hidden' : ''}${this.showProjectInfo ? ' dim' : ''}`;
   }
 
   get leftArrowClass(): string {
-    return `arrow arrow-left${this.currentPhotoIdx === 0 ? ' hidden' : ''}`;
+    return `arrow arrow-left${this.currentPhotoIdx === 0 ? ' hidden' : ''}${this.showProjectInfo ? ' dim' : ''}`;
   }
 
   get projectInfoClass(): string {

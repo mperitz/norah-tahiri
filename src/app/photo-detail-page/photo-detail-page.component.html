@@ -1,19 +1,20 @@
 <i [ngClass]="'arrow-top ' + rightArrowClass" (click)="carouselRight()"></i>
 <i [ngClass]="'arrow-top ' + leftArrowClass" (click)="carouselLeft()"></i>
 <div class="photo-container">
-  <div class="outer outer-top">
+  <div class="outer outer-top web">
     <p class="title-text left top">{{project.name}}</p>
     <div class="info-text-anchor right top" (click)="toggleProjectInfo()">
       <p class="info-text">PROJECT INFO</p>
     </div>
   </div>
+
   <div id="carousel" class="inner">
     <div
       id="carousel-container"
-      class="carousel-container"
+      class="carousel-container web"
       (touchstart)="onTouchStart($event)"
       (touchend)="onTouchEnd($event)"
-      style="transform: translateX(0%)"
+      style="transform: translateX(0vw)"
     >
       <div
         *ngFor="let photo of project.photos; let i = index"
@@ -26,20 +27,47 @@
         />
       </div>
     </div>
+    <div
+      id="carousel-container-mobile"
+      class="carousel-container mobile"
+      (touchstart)="onTouchStart($event)"
+      (touchend)="onTouchEnd($event)"
+      style="transform: translateX(0vw)"
+    >
+      <div
+        *ngFor="let photo of project.photos; let i = index"
+        class="carousel-item-mobile"
+        [style.height]="photoWidthMobile(i)"
+      >
+        <img
+          class="carousel-photo"
+          [src]="photo.src"
+        />
+      </div>
+    </div>
   </div>
 
   <div class="outer outer-bottom">
     <a routerLink="/photography" class="anchor left bottom">
       <p class="info-text">BACK TO PORTFOLIO</p>
     </a>
+    <i [ngClass]="'arrow-mobile ' + leftArrowClass" (click)="carouselLeft()"></i>
     <div class="counter">
-      <p class="counter-text">{{currentPhotoIdx + 1}}/{{project.photos.length}}</p>
+      <p class="counter-text">{{currentPhotoIdx + 1}} / {{project.photos.length}}</p>
     </div>
+    <i [ngClass]="'arrow-mobile ' + rightArrowClass" (click)="carouselRight()"></i>
     <a [href]="'/photography/' + nextProject.id" class="anchor right bottom">
       <p class="info-text">NEXT PROJECT</p>
     </a>
   </div>
 </div>
+
+<img
+  class="info"
+  src="../../assets/images/icons/baseline-more_horiz-24px.svg"
+  (click)="toggleProjectInfo()"
+/>
+
 
 <div [ngClass]="projectInfoClass">
   <p class="project-info-main-text">{{project.name}}</p>

@@ -56,7 +56,6 @@
 .counter {
   position: absolute;
   margin: 0 auto;
-  width: 24px;
   left: calc(50% - 12px);
   height: 60px;
   display: flex;
@@ -77,6 +76,10 @@
   display: flex;
   list-style: none;
   transition: transform 500ms ease-in-out;
+}
+
+.mobile {
+  display: none;
 }
 
 .carousel-item {
@@ -109,6 +112,10 @@
   box-sizing: border-box;
   cursor: pointer;
   z-index: 1;
+}
+
+.dim {
+  color: #88898a45 !important;
 }
 
 .arrow::before {
@@ -200,5 +207,9 @@
 }
 
 .hidden {
+  display: none;
+}
+
+.arrow-mobile {
   display: none;
 }

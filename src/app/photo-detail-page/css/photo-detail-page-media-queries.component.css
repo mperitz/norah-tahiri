@@ -33,33 +33,112 @@
       height: calc(100vh - 50px);
     }
 
-    .title-text {
-      font-size: 18px;
+    .arrow-top {
+      display: none;
     }
 
-    .info-text {
-      font-size: 10px;
-      line-height: 2.5;
+    .web {
+      display: none;
     }
 
-    .top {
-      margin-top: 60px;
+    .mobile {
+      display: flex;
+      align-items: center;
     }
 
-    .bottom {
-      margin-bottom: 35px;
+    .carousel-item-mobile {
+      width: 100vw;
+    }
+
+    .carousel-photo {
+      width: 100%;
+      height: 100%;
+    }
+
+    .outer {
+      position: absolute;
+      bottom: 0;
+      height: auto;
+      justify-content: center;
+    }
+
+    .anchor.bottom {
+      display: none;
     }
 
     .counter {
-      margin: -15vh auto;
-    }
-
-    .counter-text {
-      font-size: 16px;
+      margin: 0;
+      position: unset;
+      left: unset;
     }
 
     .arrow-top {
-      display: none;
+      display: none !important;
+    }
+
+    .arrow-mobile {
+      display: block;
+    }
+
+    .arrow {
+      width: 10px;
+      height: 10px;
+      border-width: 2px 2px 0 0;
+      border-style: solid;
+      margin: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      color: #88898a;
+      box-sizing: border-box;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .arrow::before {
+      position: absolute;
+      height: 2px;
+      box-shadow: inset 0 0 0 32px;
+      width: 15px;
+      transform-origin: right top;
+      content: "";
+      box-sizing: border-box;
+      transform: rotate(-45deg);
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .arrow-right {
+      transform: rotate(45deg);
+    }
+
+    .arrow-right::before {
+      right: 1px;
+      top: -1px;
+    }
+
+    .arrow-left {
+      transform: rotate(-135deg);
+    }
+
+    .arrow-left::before {
+      right: 0;
+      top: -1px;
+    }
+
+    .outer-bottom {
+      align-items: center;
+    }
+
+    .info {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 20px;
+    }
+
+    .project-info-sub-text {
+      width: 300px;
+      font-size: 12px;
     }
   }
 }
