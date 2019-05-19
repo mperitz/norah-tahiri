@@ -1,13 +1,15 @@
 @media screen and (orientation: portrait) {
   .full-width-flex-container {
     width: 100vw;
+    padding: 15px 0;
   }
 
   .detail-half {
     width: 100%;
-    height: 250px;
+    height: auto;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 15px 0;
   }
 
   .detail-text-container {

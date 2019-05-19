@@ -69,6 +69,7 @@
   line-height: 2.9;
   text-align: center;
   color: #88898a;
+  margin: 0;
 }
 
 .carousel-container {
@@ -97,8 +98,8 @@
 }
 
 .arrow {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-width: 2px 2px 0 0;
   border-style: solid;
   margin: 10px;
@@ -125,7 +126,7 @@
 
 .arrow-right {
   transform: rotate(45deg);
-  right: 5px;
+  right: 50px;
 }
 
 .arrow-right::before {
@@ -135,7 +136,7 @@
 
 .arrow-left {
   transform: rotate(-135deg);
-  left: 5px;
+  left: 50px;
 }
 
 .arrow-left::before {

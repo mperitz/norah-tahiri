@@ -633,7 +633,7 @@ const designProjects: Array<Project> = [
 export const defaultDesignProject: Project = {
   id: 0,
   name: 'Default',
-  src: '../assets/images/design/group.svg',
+  src: '../assets/images/design/homepage-photos@3x.jpg',
   color: '#363636',
   isDefault: true,
   mainDescription: '',

@@ -10,6 +10,12 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .main-text {
+    font-size: 26px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   #mobile {
     display: flex;

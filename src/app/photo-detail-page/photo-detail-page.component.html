@@ -29,13 +29,13 @@
   </div>
 
   <div class="outer outer-bottom">
-    <a routerLink="/design" class="anchor left bottom">
+    <a routerLink="/photography" class="anchor left bottom">
       <p class="info-text">BACK TO PORTFOLIO</p>
     </a>
     <div class="counter">
       <p class="counter-text">{{currentPhotoIdx + 1}}/{{project.photos.length}}</p>
     </div>
-    <a [routerLink]="'/photography/' + nextProject.id" class="anchor right bottom">
+    <a [href]="'/photography/' + nextProject.id" class="anchor right bottom">
       <p class="info-text">NEXT PROJECT</p>
     </a>
   </div>
