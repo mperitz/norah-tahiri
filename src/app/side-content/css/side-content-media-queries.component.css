@@ -1,20 +1,13 @@
 @media screen and (orientation: portrait) {
-  .flex-section p {
-    color: white;
-  }
-
-  .flex-section a {
-    color: white;
-  }
-
   .list-container p {
-    /* Need to use !important to overwrite [style.color] in <div> tag */
-    color: white !important;
     margin: 20px;
   }
 
+  p {
+    color: white !important;
+  }
+
   .dot {
-    /* Need to use !important to overwrite [style.background] in <div> tag */
     background: white !important;
   }
 
