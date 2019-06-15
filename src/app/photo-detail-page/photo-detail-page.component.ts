@@ -108,6 +108,10 @@ export class PhotoDetailPageComponent implements OnInit {
     this.showProjectInfo = !this.showProjectInfo;
   }
 
+  isHidden(idx: number): string {
+    return idx !== this.currentPhotoIdx ? 'hidden' : '';
+  }
+
   get rightArrowClass(): string {
     return `arrow arrow-right${this.currentPhotoIdx === this.project.photos.length - 1 ? ' hidden' : ''}${this.showProjectInfo ? ' dim' : ''}`;
   }

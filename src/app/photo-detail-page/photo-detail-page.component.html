@@ -19,6 +19,7 @@
       <div
         *ngFor="let photo of project.photos; let i = index"
         class="carousel-item"
+        [ngClass]="isHidden(i)"
       >
         <img
           class="carousel-photo"

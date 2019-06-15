@@ -142,3 +142,24 @@
     }
   }
 }
+
+@media (orientation: landscape) {
+  .info {
+    display: none;
+  }
+
+  @media (max-height: 700px) {
+    .project-info {
+      justify-content: space-evenly;
+    }
+
+    .project-info-main-text,
+    .project-info-sub-text {
+      margin: 0;
+    }
+
+    .project-info-exit {
+      top: 0;
+    }
+  }
+}

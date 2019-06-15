@@ -89,6 +89,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: visibility;
+  transition-duration: 500ms;
 }
 
 .carousel-photo {
@@ -207,7 +209,7 @@
 }
 
 .hidden {
-  display: none;
+  visibility: hidden;
 }
 
 .arrow-mobile {
