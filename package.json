@@ -4,12 +4,12 @@
   "license": "See LICENSE.md",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "dev": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prod": "npm run build && node src/server/index.js"
+    "start": "npm run build && node src/server/index.js"
   },
   "private": true,
   "dependencies": {
