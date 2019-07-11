@@ -278,10 +278,6 @@ const photographyProjects: Array<Project> = [
     role: '',
     photos: [
       {
-        src: '../assets/images/photography/roadtrip@3x.jpg',
-        ratio: getRatio(2049, 2304),
-      },
-      {
         src: '../assets/images/wild-geese/wildgeese-1.JPG',
         ratio: getRatio(2000, 1348),
       },
@@ -328,6 +324,10 @@ const photographyProjects: Array<Project> = [
       {
         src: '../assets/images/wild-geese/wildgeese-12.jpg',
         ratio: getRatio(2403, 3004),
+      },
+      {
+        src: '../assets/images/photography/roadtrip@3x.jpg',
+        ratio: getRatio(2049, 2304),
       },
     ],
   },
