@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start": "cross-env PORT=4200 node src/server/index.js",
+    "start": "cross-env node src/server/index.js",
     "prod": "ng build && npm start"
   },
   "private": true,
