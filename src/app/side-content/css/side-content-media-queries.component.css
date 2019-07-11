@@ -7,6 +7,12 @@
     background: white !important;
   }
 
+  .flex-section p,
+  .flex-section a,
+  .list-container p {
+    color: white !important;
+  }
+
   @media screen and (max-width: 1200px) {
     .list-container p {
       font-size: 54px;

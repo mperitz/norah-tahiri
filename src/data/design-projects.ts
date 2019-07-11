@@ -16,7 +16,7 @@ const designProjects: Array<Project> = [
     src: '../assets/images/design/we-are-the-ones-home@3x.jpg',
     color: '#f9564f',
     isDefault: false,
-    mainDescription: 'Matter Unlimited partnered with ESPN and the Obama Foundation / MBKA to create a campaign urging young Americans to become allies and join the fight against the injustices our boys and young men of color face. We launched a spot “we-are-the-ones” with an accompanying digital campaign introducing the “The Keepers’ Code”, a guide created by young men of color around the nation for allies to live by.',
+    mainDescription: 'Matter Unlimited partnered with ESPN and the Obama Foundation / MBKA to create a campaign urging young Americans to become allies and join the fight against the injustices our boys and young men of color face. We launched a spot “We Are The Ones” with an accompanying digital campaign introducing the “The Keepers’ Code”, a guide created by young men of color around the nation for allies to live by.',
     client: 'The Obama Foundation',
     href: 'https://www.obama.org/mbka/mentor/',
     team: [
@@ -633,7 +633,7 @@ const designProjects: Array<Project> = [
 export const defaultDesignProject: Project = {
   id: 0,
   name: 'Default',
-  src: '../assets/images/design/Rose-2.png',
+  src: '../assets/images/design/abstract-dark.png',
   color: '#363636',
   isDefault: true,
   mainDescription: '',
