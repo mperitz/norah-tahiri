@@ -30,9 +30,9 @@ export class PhotoDetailPageComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.sub = this.route.params.subscribe(({ id }) => {
+    this.sub = this.route.params.subscribe(({ name }) => {
       photographyProjects.forEach((project, index) => {
-        if (project.id === +id) {
+        if (project.url === name) {
           this.project = project;
           this.nextProject = photographyProjects[(index + 1) % photographyProjects.length];
         }

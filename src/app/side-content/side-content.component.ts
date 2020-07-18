@@ -39,7 +39,7 @@ export class SideContentComponent {
     return this.type === type ? 'block' : 'none'
   }
 
-  getLinkTo(id: number): string {
-    return `/${this.type}/${id}`;
+  getLinkTo(url: string): string {
+    return `/${this.type}/${url}`;
   }
 }

@@ -15,7 +15,7 @@ const routes: Routes = [
     data: { type: 'design' },
   },
   {
-    path: 'design/:id',
+    path: 'design/:name',
     component: DesignProjectPageComponent,
   },
   {
@@ -24,7 +24,7 @@ const routes: Routes = [
     data: { type: 'photography' },
   },
   {
-    path: 'photography/:id',
+    path: 'photography/:name',
     component: PhotoDetailPageComponent,
   },
   {

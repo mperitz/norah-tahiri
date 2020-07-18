@@ -8,6 +8,7 @@ const photographyProjects: Array<Project> = [
   {
     id: 1,
     name: 'Portraits',
+    url: 'portraits',
     src: '../assets/images/photography/portrait@3x.jpg',
     color: '#363636',
     isDefault: false,
@@ -49,6 +50,7 @@ const photographyProjects: Array<Project> = [
   {
     id: 2,
     name: 'Landscape',
+    url: 'landscape',
     src: '../assets/images/photography/landscape@3x.jpg',
     color: '#363636',
     isDefault: false,
@@ -114,6 +116,7 @@ const photographyProjects: Array<Project> = [
   {
     id: 3,
     name: 'People in Town',
+    url: 'people-in-town',
     src: '../assets/images/photography/environmental@3x.jpg',
     color: '#363636',
     isDefault: false,
@@ -163,6 +166,7 @@ const photographyProjects: Array<Project> = [
   {
     id: 4,
     name: 'Habibi\'s Hutch',
+    url: 'habibis-hutch',
     src: '../assets/images/photography/habibi@3x.jpg',
     color: '#363636',
     isDefault: false,
@@ -208,6 +212,7 @@ const photographyProjects: Array<Project> = [
   {
     id: 5,
     name: 'Musicians',
+    url: 'musicians',
     src: '../assets/images/photography/musicians@3x.jpg',
     color: '#363636',
     isDefault: false,
@@ -269,6 +274,7 @@ const photographyProjects: Array<Project> = [
   {
     id: 6,
     name: 'Wild Geese',
+    url: 'wild-geese',
     src: '../assets/images/wild-geese/wildgeese-12.jpg',
     color: '#363636',
     isDefault: false,
@@ -332,6 +338,7 @@ const photographyProjects: Array<Project> = [
 export const defaultPhotographyProject: Project = {
   id: 0,
   name: 'Default',
+  url: 'default',
   src: '../assets/images/photography/default@3x.jpg',
   color: '#363636',
   isDefault: true,

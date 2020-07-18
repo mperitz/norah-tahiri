@@ -32,9 +32,9 @@ export class DesignProjectPageComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.sub = this.route.params.subscribe(({ id }) => {
+    this.sub = this.route.params.subscribe(({ name }) => {
       designProjects.forEach((project, index) => {
-        if (project.id === +id) {
+        if (project.url === name) {
           this.project = project;
           this.nextProject = designProjects[(index + 1) % designProjects.length];
           this.prevProject = designProjects[index - 1 === -1 ? designProjects.length - 1 : index -1];

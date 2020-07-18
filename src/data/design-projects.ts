@@ -13,6 +13,7 @@ const designProjects: Array<Project> = [
   {
     id: 1,
     name: 'We Are The Ones',
+    url: 'we-are-the-ones',
     src: '../assets/images/design/we-are-the-ones@3x.jpg',
     color: '#f9564f',
     isDefault: false,
@@ -189,6 +190,7 @@ const designProjects: Array<Project> = [
   {
     id: 2,
     name: 'Benny',
+    url: 'benny',
     src: '../assets/images/design/benny-header-home@3x.jpg',
     color: '#a81b8d',
     isDefault: false,
@@ -418,6 +420,7 @@ const designProjects: Array<Project> = [
   {
     id: 3,
     name: 'Share The ❤️',
+    url: 'share-the-love',
     src: '../assets/images/design/share-the-love@3x.jpg',
     color: '#55dde0',
     isDefault: false,
@@ -534,6 +537,7 @@ const designProjects: Array<Project> = [
   {
     id: 4,
     name: 'NSGRA',
+    url: 'nsgra',
     src: '../assets/images/design/nsgra@3x.jpg',
     color: '#c200fb',
     isDefault: false,
@@ -626,6 +630,7 @@ const designProjects: Array<Project> = [
   {
     id: 5,
     name: 'Stories of Living On',
+    url: 'stories-of-living-on',
     src: '../assets/images/design/stories-of-living-on@3x.jpg',
     color: '#4848fd',
     isDefault: false,
@@ -776,6 +781,7 @@ const designProjects: Array<Project> = [
   {
     id: 6,
     name: 'Witty',
+    url: 'witty',
     src: '../assets/images/design/witty-header@3x.jpg',
     color: '#f7c54c',
     isDefault: false,
@@ -884,6 +890,7 @@ const deprecatedProjects = [
   {
     id: 5,
     name: 'SciStarter',
+    url: 'scistarter',
     src: '../assets/images/design/scistarter-home@3x.jpg',
     color: '#f78d01',
     isDefault: false,
@@ -940,6 +947,7 @@ const deprecatedProjects = [
   {
     id: 6,
     name: 'The Bike Republic',
+    url: 'the-bike-republic',
     src: '../assets/images/design/bike-republic-home@3x.jpg',
     color: '#fdca40',
     isDefault: false,
@@ -1008,6 +1016,7 @@ const deprecatedProjects = [
 export const defaultDesignProject: Project = {
   id: 0,
   name: 'Default',
+  url: 'default',
   src: '../assets/images/design/abstract-dark.png',
   color: '#363636',
   isDefault: true,
