@@ -506,6 +506,10 @@ const designProjects: Array<Project> = [
       },
     ],
   },
+];
+
+// Projects removed from view at Norah's request.
+const deprecatedProjects = [
   {
     id: 5,
     name: 'SciStarter',
@@ -628,7 +632,7 @@ const designProjects: Array<Project> = [
       },
     ]
   },
-];
+]
 
 export const defaultDesignProject: Project = {
   id: 0,
