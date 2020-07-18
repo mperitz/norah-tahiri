@@ -105,9 +105,7 @@
   </ng-template>
   <ng-template [ngIf]="content.type === 'text'">
     <div class="content-container">
-      <div
-        class="content-text"
-      >
+      <div class="content-text">
         <p *ngFor="let text of content.text" [ngClass]="getTextClass(text.type)">{{text.value}}</p>
       </div>
     </div>

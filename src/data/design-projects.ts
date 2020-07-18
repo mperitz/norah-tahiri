@@ -34,6 +34,19 @@ const designProjects: Array<Project> = [
         videoId: 'zSJs-DE6mSE',
       },
       {
+        type: Type.Text,
+        text: [
+          {
+            type: TextType.Body,
+            value: 'As Art Director, my role was to come up with a visual identity for the campaign; work with multiple photographers to direct photo shoots and capture the art direction; and design an interactive website, posters, digital and print marketing collateral. It also included designing  an exhibit for the Obama Summit. I also worked directly with the Director of Strategy to develop the Keepers Code.',
+          },
+          {
+            type: TextType.Body,
+            value: 'The Keepers Code was a set of principles that was created to help inspire a movement. We wanted them to spark deep conversations and interactions, to drive people to take action, and to encourage other BIPOC to submit their own codes so that they had a direct hand in its evolution. The Keepers Code was built to evolve. We wanted the code to reflect what was happening in the world, highlighting the progress we’ve made and the work we still have left to do.',
+          },
+        ],
+      },
+      {
         type: Type.Image,
         src: '../assets/images/we-are-the-ones/Body/wearetheones_9.png',
         paddingPercentage: 69,
@@ -43,15 +56,19 @@ const designProjects: Array<Project> = [
         text: [
           {
             type: TextType.Header,
-            value: 'Modular Frames',
+            value: 'A Transformative Design',
           },
           {
             type: TextType.Body,
-            value: 'I designed a simple but bold identity that used black and white frames to create versatile, modular layouts that could be used on any platform – in print or digital form, in a vertical or horizontal space, and as an interactive website.',
+            value: 'The strategy behind the Keepers Code directly influenced my design direction. I wanted to create a visual identity that could support the movement’s growth and evolution. Functionally, I wanted it to be capable of transforming so that it could fit in any space, work on any platform, in any context.',
           },
           {
             type: TextType.Body,
-            value: 'I wanted to keep the focus on the powerful codes written by the young men of color, but still provide an opportunity to build upon them with supporting materials such as portraits of the young men of color who inspired the codes, videos, interactive pieces, shareable assets, ways to get involved, etc.',
+            value: 'I designed a simple but bold identity that used black and white frames to create versatile, modular layouts that could be used on any platform – in print or digital form, in a vertical or horizontal space.',
+          },
+          {
+            type: TextType.Body,
+            value: 'I chose black and white because they are colors associated with truth and because I wanted to use high contrast colors to keep the focus on the powerful codes written by the young men of color. While handwritten typography would have been more visually appealing, I decided to use a bold typeface instead so that the design was accessible to everyone and could be easily replicated by those interested in participating in the movement.',
           },
         ]
       },
@@ -79,7 +96,11 @@ const designProjects: Array<Project> = [
           },
           {
             type: TextType.Body,
-            value: 'The modular cards allows both the client and target audience to participate in the code’s evolution. Anyone who interacts with the Keepers Code chooses how they share the code within their networks - you can share one individual code that resonates with you or the entire list. The Obama Foundation used these interactive cards to further develop the narrative of the campaign by embedding supporting media within the frames (videos, pdfs, supporting content, etc).',
+            value: 'The website was built using modular cards that contained various types of media associated with the campaign - photos, videos, interactive elements, ways to get involved, shareable assets, etc.',
+          },
+          {
+            type: TextType.Body,
+            value: 'Having the cards in a modular layout encouraged exploration and allowed the Obama Foundation to continue adding content as the movement progressed without disrupting the user experience. The cards were designed so that each user could choose their own level of participation with the content. You could view online, share directly to your own social media networks or download the asset to customize or build upon it.',
           },
         ]
       },
@@ -171,7 +192,7 @@ const designProjects: Array<Project> = [
     src: '../assets/images/design/share-the-love-home@3x.jpg',
     color: '#55dde0',
     isDefault: false,
-    mainDescription: 'Matter Unlimited created a fun, animated spot for LiveOnNY encouraging people to share the      by signing up to become an organ donor. We wrote a catchy anthem and created unique, animated organs to drive the campaign and help mitigate the “ick” factor that so often taints conversations about organ donation.',
+    mainDescription: 'To help increase organ donor enrollment, Matter Unlimited partnered with LiveOnNY to create a fun, catchy anthem and animated spot encouraging Americans to share the ❤️ by signing up to become an organ donor. The spot and its accompanying marketing campaign launched on LiveOnNY’s annual Organ Donor Enrollment Day.',
     client: 'LIVEONNY',
     href: 'https://www.facebook.com/LiveOnNewYork/',
     team: [
@@ -194,7 +215,11 @@ const designProjects: Array<Project> = [
           },
           {
             type: TextType.Body,
-            value: 'In addition to the spot, we rolled out a social media campaign and put up billboards in NYC reminding people that in the end, its sharing what’s inside that really counts.',
+            value: 'As the Art Director, my job was to oversee the entire visual direction for the video as well as design all digital and print assets for the campaign. I was in charge of storyboarding the entire script, sourcing the illustration and animation team and working with them to ensure my vision for the spot was brought to life.',
+          },
+          {
+            type: TextType.Body,
+            value: 'To mitigate the “ick factor” that is often associated with organ donation, I wanted to use friendly animated characters of organs for the video. We wanted people to have a warm, positive association with organs so that they felt comfortable discussing organ donation with their loved ones. The cute, chubby organs paired with cheeky lyrics made this spot appealing to all ages.',
           },
         ]
       },
@@ -375,7 +400,7 @@ const designProjects: Array<Project> = [
     src: '../assets/images/design/live-on-ny-home@3x.jpg',
     color: '#4848fd',
     isDefault: false,
-    mainDescription: 'Matter Unlimited was tasked with redesigning the LiveOnNY website and developing new media content to establish LiveOnNY as the trusted organizational authority on organ donation. We designed a new modular website with a narrative-driven structure to faciliate exploration and inspiration. We also created a new video series, infographics, and photos for the site. ',
+    mainDescription: 'Matter Unlimited was tasked with redesigning the LiveOnNY website and developing new media content to establish LiveOnNY as the trusted organizational authority on organ donation.',
     client: 'LIVEONNY',
     href: 'https://www.liveonny.org/',
     team: [
@@ -386,8 +411,29 @@ const designProjects: Array<Project> = [
     role: 'Art Director & UI Designer',
     content: [
       {
+        type: Type.Text,
+        text: [
+          {
+            type: TextType.Body,
+            value: 'As the Art Director for this project, I led the creative development of all new media content for the new website. I worked directly with Maddy Talias to create a new video and photo series chronicling the life-changing impact of organ donation. We featured real-life stories from organ donation recipients, donors, and people waiting for an organ donation.',
+          },
+          {
+            type: TextType.Body,
+            value: 'We then used these stories, along with impactful data-driven infographics, to create new engaging content to populate the new website. I also completed the UI design for the website.',
+          },
+        ],
+      },
+      {
         type: Type.Video,
         videoId: 'YHMYcYJ-RBc',
+      },
+      {
+        type: Type.Video,
+        videoId: '1HfytvbHxfM',
+      },
+      {
+        type: Type.Video,
+        videoId: 'mx3JGVuU4GA',
       },
       {
         type: Type.Text,
@@ -428,7 +474,7 @@ const designProjects: Array<Project> = [
         text: [
           {
             type: TextType.Header,
-            value: 'New Site Architecture',
+            value: 'Utility-driven Structure',
           },
           {
             type: TextType.Body,
@@ -436,11 +482,11 @@ const designProjects: Array<Project> = [
           },
           {
             type: TextType.Body,
-            value: 'By building the site in modules, the client is able to build customized layouts for each page to best support the narrative being presented – whether that be using videos, long form articles, infographics, etc. The featured story or content leads the page and additional supporting info is contextualized to support the narrative voice. We created persistent CTA’s throughout the page and introduced “launch points” for further exploration.',
+            value: 'By building the site in modules, the client is able to build customized layouts for each page to best support the narrative being presented – whether that be using videos, long form articles, infographics, etc. The featured story or content leads the page and additional supporting info is contextualized to support a clear, narrative voice. We created persistent CTA’s throughout the page and introduced “launch points” for further exploration.',
           },
           {
             type: TextType.Body,
-            value: 'The single page scroll gives a direct structure for ease of content consumption. The emphasis is placed on need to know information and the subnav structure surfaces relevant content.',
+            value: 'The single page scroll gives a direct structure for ease of content consumption. The emphasis is placed on needed information and the sub navigation structure surfaces relevant content.',
           },
         ]
       },
@@ -463,14 +509,6 @@ const designProjects: Array<Project> = [
         type: Type.Image,
         src: '../assets/images/stories-of-living-on/Body/storiesLiveOn-11.png',
         paddingPercentage: calcRatio(672, 1000),
-      },
-      {
-        type: Type.Video,
-        videoId: '1HfytvbHxfM',
-      },
-      {
-        type: Type.Video,
-        videoId: 'mx3JGVuU4GA',
       },
     ],
     carouselImages: [
