@@ -10,7 +10,7 @@
       <!-- <a routerLink="/design" class="row-container">
         <p class="content-text">SEE ALL</p>
       </a> -->
-      <a [routerLink]="'/design/' + designProj.id" class="row-container" *ngFor="let designProj of designProjects">
+      <a [routerLink]="'/design/' + designProj.url" class="row-container" *ngFor="let designProj of designProjects">
         <p class="content-text">{{designProj.name}}</p>
       </a>
     </div>
@@ -26,7 +26,7 @@
       <!-- <a routerLink="/photography" class="row-container">
         <p class="content-text">SEE ALL</p>
       </a> -->
-      <a [routerLink]="'/photography/' + photographyProj.id" class="row-container" *ngFor="let photographyProj of photographyProjects">
+      <a [routerLink]="'/photography/' + photographyProj.url" class="row-container" *ngFor="let photographyProj of photographyProjects">
         <p class="content-text">{{photographyProj.name}}</p>
       </a>
     </div>
