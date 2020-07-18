@@ -92,8 +92,8 @@ export class DesignProjectPageComponent implements OnInit {
     return 'text text-body';
   }
 
-  getDesignLink(id: number) {
-    return `/design/${id}`
+  getDesignLink(url: string) {
+    return `/design/${url}`
   }
 
   get buttonClass(): string {
@@ -101,10 +101,10 @@ export class DesignProjectPageComponent implements OnInit {
   }
 
   get nextProjectHref(): string {
-    return this.getDesignLink(this.nextProject.id);
+    return this.getDesignLink(this.nextProject.url);
   }
 
   get prevProjectHref(): string {
-    return this.getDesignLink(this.prevProject.id);
+    return this.getDesignLink(this.prevProject.url);
   }
 }

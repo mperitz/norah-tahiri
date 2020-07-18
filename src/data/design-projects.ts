@@ -247,6 +247,10 @@ const designProjects: Array<Project> = [
             value: 'Steps I took:',
           },
           {
+            type: TextType.Body,
+            value: '',
+          },
+          {
             type: TextType.ListItem,
             value: '• Conduct an audit of the existing product',
           },
@@ -273,6 +277,10 @@ const designProjects: Array<Project> = [
           {
             type: TextType.Body,
             value: 'Also conducted:',
+          },
+          {
+            type: TextType.Body,
+            value: '',
           },
           {
             type: TextType.ListItem,
@@ -446,10 +454,6 @@ const designProjects: Array<Project> = [
       {
         type: Type.Text,
         text: [
-          {
-            type: TextType.Header,
-            value: 'Social Media & OOH Campaign',
-          },
           {
             type: TextType.Body,
             value: 'As the Art Director, my job was to oversee the entire visual direction for the video as well as design all digital and print assets for the campaign. I was in charge of storyboarding the entire script, sourcing the illustration and animation team and working with them to ensure my vision for the spot was brought to life.',
@@ -691,6 +695,10 @@ const designProjects: Array<Project> = [
           },
           {
             type: TextType.Body,
+            value: '',
+          },
+          {
+            type: TextType.ListItem,
             value: '• Unregistered New Yorkers'
           },
           {
