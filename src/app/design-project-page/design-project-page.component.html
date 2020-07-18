@@ -63,7 +63,7 @@
   <div class="detail-half">
     <div class="detail-text-container">
       <p class="detail-title-text">Role</p>
-      <p class="detail-subtitle-text">{{project.role}}</p>
+      <p *ngFor="let role of project.role" class="detail-subtitle-text">{{role}}</p>
     </div>
   </div>
   <div class="detail-half detail-short">

@@ -27,7 +27,7 @@ const designProjects: Array<Project> = [
       'J.M. Harper - Director',
       'Lonely Leap - Production Company',
     ],
-    role: 'Art Director & Lead Designer',
+    role: ['Art Director', 'Design Strategist'],
     content: [
       {
         type: Type.Video,
@@ -200,7 +200,7 @@ const designProjects: Array<Project> = [
       'Jeff Michels - Developer',
       'Skillhire - Development Team',
     ],
-    role: 'UX / UI Designer',
+    role: ['UX / UI Designer'],
     content: [
       {
         type: Type.Text,
@@ -429,7 +429,7 @@ const designProjects: Array<Project> = [
       'Gordei - Illustration & Animation',
       'Duotone Studios - Music',
     ],
-    role: 'Art Director & Lead Designer',
+    role: ['Art Director', 'Lead Designer'],
     content: [
       {
         type: Type.Video,
@@ -545,7 +545,7 @@ const designProjects: Array<Project> = [
       'Miriam Kassel - Art Director',
       'Rebecca Behrens - UX Designer',
     ],
-    role: 'UI Designer',
+    role: ['UI Designer'],
     content: [
       {
         type: Type.Image,
@@ -637,7 +637,7 @@ const designProjects: Array<Project> = [
       'Maddy Talias - Director/Photographer',
       'Ryan Topham - Producer',
     ],
-    role: 'Art Director & UI Designer',
+    role: ['Art Director', 'UI Designer'],
     content: [
       {
         type: Type.Text,
@@ -785,7 +785,7 @@ const designProjects: Array<Project> = [
     team: [
       'Norah Tahiri Design',
     ],
-    role: 'Art Director & Designer',
+    role: ['Art Director', 'Designer'],
     content: [
       {
         type: Type.Text,
@@ -891,7 +891,7 @@ const deprecatedProjects = [
     client: 'SCISTARTER',
     href: 'https://scistarter.org/dashboard',
     team: ['Backpack Interactive - Agency'],
-    role: 'UX / UI Designer',
+    role: ['UX / UI Designer'],
     content: [
       {
         type: Type.Image,
@@ -947,7 +947,7 @@ const deprecatedProjects = [
     client: 'THE BIKE REPUBLIC',
     href: '',
     team: ['Norah Tahiri Design'],
-    role: 'Art Director & UX/UI Designer',
+    role: ['Art Director', 'UX/UI Designer'],
     content: [
       {
         type: Type.Image,
@@ -1015,7 +1015,7 @@ export const defaultDesignProject: Project = {
   client: '',
   href: '',
   team: [],
-  role: '',
+  role: [''],
 };
 
 export default designProjects;

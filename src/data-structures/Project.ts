@@ -10,7 +10,7 @@ export default interface Project {
   mainDescription: string,
   client: string,
   team: string[],
-  role: string,
+  role: string[],
   content?: Content[],
   href?: string,
   carouselImages?: CarouselImage[],
