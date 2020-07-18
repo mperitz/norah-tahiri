@@ -22,8 +22,10 @@ export class VideoComponent implements OnInit {
         'onReady': (e) => {
           if (!this.reframed) {
             this.reframed = true;
-            reframe(e.target.a);
-            document.getElementById(`design-video-${this.videoId}`).style.visibility = 'visible';
+            console.log(document.getElementById(`design-video-${this.videoId}`));
+            reframe(e.target.A);
+
+            document.getElementById(`design-video-${this.videoId}`).classList.remove('hidden');
           }
         }
       }

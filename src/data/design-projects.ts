@@ -166,98 +166,6 @@ const designProjects: Array<Project> = [
     ],
   },
   {
-    id: 2,
-    name: 'NSGRA',
-    src: '../assets/images/design/nsgra-home@3x.jpg',
-    color: '#c200fb',
-    isDefault: false,
-    mainDescription: 'The redesign of Scholastic’s Next Step Guided Reading Assessment software was an opportunity to transform a well-loved but outdated resource that numerious teachers considered vital to understanding and supporting their students’ ELA skills.',
-    client: 'Scholastic',
-    href: 'http://teacher.scholastic.com/products/Next-Step-Guided-Reading-Assessment/',
-    team: [
-      'Backpack Interactive - Studio',
-      'Miriam Kassel - Art Director',
-      'Rebecca Behrens - UX Designer',
-    ],
-    role: 'UI Designer',
-    content: [
-      {
-        type: Type.Image,
-        src: '../assets/images/NSGRA/Body/nsgra_4.png',
-        paddingPercentage: 59,
-      },
-      {
-        type: Type.Image,
-        src: '../assets/images/NSGRA/Body/nsgra_5.png',
-        paddingPercentage: 62.5,
-      },
-      {
-        type: Type.Image,
-        src: '../assets/images/NSGRA/Body/nsgra_6.png',
-        paddingPercentage: 90.6,
-      },
-      {
-        type: Type.Text,
-        text: [
-          {
-            type: TextType.Header,
-            value: 'Creating Actionable Data Visualizations',
-          },
-          {
-            type: TextType.Body,
-            value: 'Once a teacher has entered their data, visualizations and reports are instantly available. The visual presentation is at once friendly and powerful. Teachers and administrators can effortlessly discover class-wide performance trends and personalize their instruction for learners needing additional attention or challenges.',
-          },
-          {
-            type: TextType.Body,
-            value: 'Teachers can also use the data to sort and segment their learners into targeted groups and customize the areas of concentration based on that their common challenges.',
-          },
-        ]
-      },
-      {
-        type: Type.Image,
-        src: '../assets/images/NSGRA/Body/nsgra_7.png',
-        paddingPercentage: 57.2,
-      },
-      {
-        type: Type.Image,
-        src: '../assets/images/NSGRA/Body/nsgra_8.png',
-        paddingPercentage: 59,
-      },
-      {
-        type: Type.Image,
-        src: '../assets/images/NSGRA/Body/nsgra_9.png',
-        paddingPercentage: 69.8,
-      },
-      {
-        type: Type.Image,
-        src: '../assets/images/NSGRA/Body/nsgra_10.png',
-        paddingPercentage: 105.2,
-      },
-      {
-        type: Type.Image,
-        src: '../assets/images/NSGRA/Body/nsgra_11.png',
-        paddingPercentage: 57.7,
-      },
-    ],
-    carouselImages: [
-      {
-        src: '../assets/images/NSGRA/Carousel/nsgra_1.png',
-        width: getScaledWidth(716, 450, 450),
-        mobileWidth: getScaledWidth(716, 450, 250),
-      },
-      {
-        src: '../assets/images/NSGRA/Carousel/nsgra_2.png',
-        width: getScaledWidth(361, 450, 450),
-        mobileWidth: getScaledWidth(361, 450, 250),
-      },
-      {
-        src: '../assets/images/NSGRA/Carousel/nsgra_3.png',
-        width: getScaledWidth(764, 450, 450),
-        mobileWidth: getScaledWidth(764, 450, 250),
-      },
-    ],
-  },
-  {
     id: 3,
     name: 'Share The Love',
     src: '../assets/images/design/share-the-love-home@3x.jpg',
@@ -371,6 +279,98 @@ const designProjects: Array<Project> = [
   },
   {
     id: 4,
+    name: 'NSGRA',
+    src: '../assets/images/design/nsgra-home@3x.jpg',
+    color: '#c200fb',
+    isDefault: false,
+    mainDescription: 'The redesign of Scholastic’s Next Step Guided Reading Assessment software was an opportunity to transform a well-loved but outdated resource that numerious teachers considered vital to understanding and supporting their students’ ELA skills.',
+    client: 'Scholastic',
+    href: 'http://teacher.scholastic.com/products/Next-Step-Guided-Reading-Assessment/',
+    team: [
+      'Backpack Interactive - Studio',
+      'Miriam Kassel - Art Director',
+      'Rebecca Behrens - UX Designer',
+    ],
+    role: 'UI Designer',
+    content: [
+      {
+        type: Type.Image,
+        src: '../assets/images/NSGRA/Body/nsgra_4.png',
+        paddingPercentage: 59,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/NSGRA/Body/nsgra_5.png',
+        paddingPercentage: 62.5,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/NSGRA/Body/nsgra_6.png',
+        paddingPercentage: 90.6,
+      },
+      {
+        type: Type.Text,
+        text: [
+          {
+            type: TextType.Header,
+            value: 'Creating Actionable Data Visualizations',
+          },
+          {
+            type: TextType.Body,
+            value: 'Once a teacher has entered their data, visualizations and reports are instantly available. The visual presentation is at once friendly and powerful. Teachers and administrators can effortlessly discover class-wide performance trends and personalize their instruction for learners needing additional attention or challenges.',
+          },
+          {
+            type: TextType.Body,
+            value: 'Teachers can also use the data to sort and segment their learners into targeted groups and customize the areas of concentration based on that their common challenges.',
+          },
+        ]
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/NSGRA/Body/nsgra_7.png',
+        paddingPercentage: 57.2,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/NSGRA/Body/nsgra_8.png',
+        paddingPercentage: 59,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/NSGRA/Body/nsgra_9.png',
+        paddingPercentage: 69.8,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/NSGRA/Body/nsgra_10.png',
+        paddingPercentage: 105.2,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/NSGRA/Body/nsgra_11.png',
+        paddingPercentage: 57.7,
+      },
+    ],
+    carouselImages: [
+      {
+        src: '../assets/images/NSGRA/Carousel/nsgra_1.png',
+        width: getScaledWidth(716, 450, 450),
+        mobileWidth: getScaledWidth(716, 450, 250),
+      },
+      {
+        src: '../assets/images/NSGRA/Carousel/nsgra_2.png',
+        width: getScaledWidth(361, 450, 450),
+        mobileWidth: getScaledWidth(361, 450, 250),
+      },
+      {
+        src: '../assets/images/NSGRA/Carousel/nsgra_3.png',
+        width: getScaledWidth(764, 450, 450),
+        mobileWidth: getScaledWidth(764, 450, 250),
+      },
+    ],
+  },
+  {
+    id: 5,
     name: 'Stories of Living On',
     src: '../assets/images/design/live-on-ny-home@3x.jpg',
     color: '#4848fd',
