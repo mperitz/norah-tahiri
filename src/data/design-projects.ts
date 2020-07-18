@@ -378,6 +378,11 @@ const designProjects: Array<Project> = [
         src: '../assets/images/benny/Body/commissions@3x.jpg',
         paddingPercentage: 80,
       },
+      {
+        type: Type.Image,
+        src: '../assets/images/benny/Body/group-10@3x.jpg',
+        paddingPercentage: calcRatio(5187, 2442),
+      },
     ],
     carouselImages: [
       {
