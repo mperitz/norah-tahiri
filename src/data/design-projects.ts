@@ -13,7 +13,7 @@ const designProjects: Array<Project> = [
   {
     id: 1,
     name: 'We Are The Ones',
-    src: '../assets/images/design/we-are-the-ones-home@3x.jpg',
+    src: '../assets/images/design/we-are-the-ones@3x.jpg',
     color: '#f9564f',
     isDefault: false,
     mainDescription: 'Matter Unlimited partnered with ESPN and the Obama Foundation / MBKA to create a campaign urging young Americans to become allies and join the fight against the injustices our boys and young men of color face. We launched a spot “We Are The Ones” with an accompanying digital campaign introducing the “The Keepers’ Code”, a guide created by young men of color around the nation for allies to live by.',
@@ -418,7 +418,7 @@ const designProjects: Array<Project> = [
   {
     id: 3,
     name: 'Share The Love',
-    src: '../assets/images/design/share-the-love-home@3x.jpg',
+    src: '../assets/images/design/share-the-love@3x.jpg',
     color: '#55dde0',
     isDefault: false,
     mainDescription: 'To help increase organ donor enrollment, Matter Unlimited partnered with LiveOnNY to create a fun, catchy anthem and animated spot encouraging Americans to share the ❤️ by signing up to become an organ donor. The spot and its accompanying marketing campaign launched on LiveOnNY’s annual Organ Donor Enrollment Day.',
@@ -534,7 +534,7 @@ const designProjects: Array<Project> = [
   {
     id: 4,
     name: 'NSGRA',
-    src: '../assets/images/design/nsgra-home@3x.jpg',
+    src: '../assets/images/design/nsgra@3x.jpg',
     color: '#c200fb',
     isDefault: false,
     mainDescription: 'The redesign of Scholastic’s Next Step Guided Reading Assessment software was an opportunity to transform a well-loved but outdated resource that numerious teachers considered vital to understanding and supporting their students’ ELA skills.',
@@ -626,7 +626,7 @@ const designProjects: Array<Project> = [
   {
     id: 5,
     name: 'Stories of Living On',
-    src: '../assets/images/design/live-on-ny-home@3x.jpg',
+    src: '../assets/images/design/stories-of-living-on@3x.jpg',
     color: '#4848fd',
     isDefault: false,
     mainDescription: 'Matter Unlimited was tasked with redesigning the LiveOnNY website and developing new media content to establish LiveOnNY as the trusted organizational authority on organ donation.',
