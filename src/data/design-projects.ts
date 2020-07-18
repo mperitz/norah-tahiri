@@ -417,7 +417,7 @@ const designProjects: Array<Project> = [
   },
   {
     id: 3,
-    name: 'Share The Love',
+    name: 'Share The ❤️',
     src: '../assets/images/design/share-the-love@3x.jpg',
     color: '#55dde0',
     isDefault: false,
@@ -537,7 +537,7 @@ const designProjects: Array<Project> = [
     src: '../assets/images/design/nsgra@3x.jpg',
     color: '#c200fb',
     isDefault: false,
-    mainDescription: 'The redesign of Scholastic’s Next Step Guided Reading Assessment software was an opportunity to transform a well-loved but outdated resource that numerious teachers considered vital to understanding and supporting their students’ ELA skills.',
+    mainDescription: 'The redesign of Scholastic’s Next Step Guided Reading Assessment software was an opportunity to transform a well-loved but outdated resource that numerous teachers considered vital to understanding and supporting their students’ ELA skills.',
     client: 'Scholastic',
     href: 'http://teacher.scholastic.com/products/Next-Step-Guided-Reading-Assessment/',
     team: [
@@ -575,7 +575,7 @@ const designProjects: Array<Project> = [
           },
           {
             type: TextType.Body,
-            value: 'Teachers can also use the data to sort and segment their learners into targeted groups and customize the areas of concentration based on that their common challenges.',
+            value: 'Teachers can also use the data to sort and segment their learners into targeted groups and customize the areas of concentration based on their common challenges.',
           },
         ]
       },

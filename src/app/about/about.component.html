@@ -7,8 +7,8 @@
     </div>
     <div class="space-column"></div>
     <div class="column right">
-      <a class="header-text margin-right" href="mailto:ntahiri@gmail.com" target="_top">CONTACT</a>
-      <a class="header-text margin-right" href="https://www.instagram.com/ntahiri/" target="_blank">FOLLOW</a>
+      <a class="header-text margin-right" [href]="email" target="_top">CONTACT</a>
+      <a class="header-text margin-right" [href]="instagram" target="_blank">FOLLOW</a>
     </div>
   </div>
 
@@ -18,10 +18,10 @@
     <!-- Desktop and tablet -->
     <div id="desktop-tablet" class="content-column">
       <div class="main-container">
-        <p class="main-text">Norah Tahiri is a multi-disciplinary Designer and Photographer based in Brooklyn. </p>
+        <p class="main-text">{{description}}</p>
       </div>
       <div class="subtext-container">
-        <p class="main-subtext">Previous clients include: The Obama Foundation, Scholastic, LiveOnNY, Scistarter, Boys and Girls Club of America, Merck for Mothers, Prodigy Network, The Rockefeller Foundation, Abbott, Perry Ellis, Douglas Elliman and more.</p>
+        <p class="main-subtext">{{previousClients}}</p>
       </div>
     </div>
 
@@ -29,15 +29,15 @@
     <div id="mobile" class="mobile-content-container">
       <div class="content-column">
         <div class="main-container">
-          <p class="main-text">Norah Tahiri is a multi-disciplinary Designer and Photographer based in Brooklyn. </p>
+          <p class="main-text">{{description}}</p>
         </div>
         <div class="subtext-container">
-          <p class="main-subtext">Previous clients include: The Obama Foundation, Scholastic, LiveOnNY, Scistarter, Boys and Girls Club of America, Merck for Mothers, Prodigy Network, The Rockefeller Foundation, Abbott, Perry Ellis, Douglas Elliman and more.</p>
+          <p class="main-subtext">{{previousClients}}</p>
         </div>
       </div>
       <div class="content-column">
-        <a class="header-text" href="mailto:ntahiri@gmail.com" target="_top">CONTACT</a>
-        <a class="header-text" href="https://www.instagram.com/ntahiri/" target="_blank">FOLLOW</a>
+        <a class="header-text" [href]="email" target="_top">CONTACT</a>
+        <a class="header-text" [href]="instagram" target="_blank">FOLLOW</a>
       </div>
     </div>
 
@@ -50,7 +50,7 @@
     </div>
     <div class="space-column"></div>
     <div class="column right">
-      <a href="https://www.github.com/mperitz" target="_blank">
+      <a href="https://www.linkedin.com/in/mike-peritz/" target="_blank">
         <p class="header-text subtle pointer margin-right">DEVELOPED BY MIKE PERITZ</p>
       </a>
     </div>

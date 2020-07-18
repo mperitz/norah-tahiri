@@ -13,6 +13,10 @@ import { Subscription } from 'rxjs';
 export class AboutComponent implements OnInit {
   redirectString: string;
   private sub: Subscription;
+  public description: string = 'Norah Tahiri is a multi-disciplinary Designer and Photographer based in Brooklyn.';
+  public email: string = 'mailto:ntahiri@gmail.com';
+  public instagram: string = 'https://www.instagram.com/ntahiri/';
+  public previousClients: string = 'Previous clients include: The Obama Foundation, Scholastic, LiveOnNY, The Standard, One Night, Boys and Girls Club of America, Merck for Mothers, Prodigy Network, The Rockefeller Foundation, Abbott, Perry Ellis, Douglas Elliman and more.';
 
   constructor(
     private route: ActivatedRoute,
