@@ -187,6 +187,235 @@ const designProjects: Array<Project> = [
     ],
   },
   {
+    id: 2,
+    name: 'Benny',
+    src: '../assets/images/design/benny-header-home@3x.jpg',
+    color: '#a81b8d',
+    isDefault: false,
+    mainDescription: 'Benny was created to give travelers a community where they can share and benefit from their passion for hotels. The platform allows travelers to become agents for the most sought-after hotels and share their hotel recommendations with their friends and family, allowing them to book at exclusive rates. ',
+    client: 'Benny',
+    href: 'https://www.itsbenny.com',
+    team: [
+      'Lehua Chong - Art Director',
+      'Jeff Michels - Developer',
+      'Skillhire - Development Team',
+    ],
+    role: 'UX / UI Designer',
+    content: [
+      {
+        type: Type.Text,
+        text: [
+          {
+            type: TextType.Body,
+            value: 'I was hired by One Night to design and consult on the development of Benny, a travel product which included a website, app and individual portals for agents, hotels and admin. I built out the site architecture for all 5 platforms, completed the UX/UI Design, and was the lead design and product strategist.',
+          },
+        ],
+      },
+      {
+        type: Type.Text,
+        text: [
+          {
+            type: TextType.Header,
+            value: 'The Problem',
+          },
+          {
+            type: TextType.Body,
+            value: 'The project entailed a lot of ideas that needed integration into a cohesive product with a seamless user experience. There was also no user research or testing done to measure product viability.',
+          },
+          {
+            type: TextType.Body,
+            value: 'What made this product design particularly difficult is that there were three main user experiences to consider - guest, agent, and hotel. Each user’s interaction with the product would be very different. We had to consider not only how these roles were integrated but also how to incorporate features for each into one product without having a disjointed user experience. There was an added layer of complexity with the hotel component because the back-end of Benny had to seamlessly integrate with each hotel’s automated or manually controlled property management system.',
+          },
+        ]
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/benny/Body/home-updated@3x.jpg',
+        paddingPercentage: 52,
+      },
+      {
+        type: Type.Text,
+        text: [
+          {
+            type: TextType.Header,
+            value: 'The Process',
+          },
+          {
+            type: TextType.Body,
+            value: 'Steps I took:',
+          },
+          {
+            type: TextType.ListItem,
+            value: '• Conduct an audit of the existing product',
+          },
+          {
+            type: TextType.ListItem,
+            value: '• Review an outline of the product and an extensive list of desired features',
+          },
+          {
+            type: TextType.ListItem,
+            value: '• Discuss the business’ goals, growth strategies and current operating practices with founder',
+          },
+          {
+            type: TextType.ListItem,
+            value: '• Conduct internal stakeholder interviews',
+          },
+          {
+            type: TextType.Body,
+            value: '',
+          },
+          {
+            type: TextType.Body,
+            value: '',
+          },
+          {
+            type: TextType.Body,
+            value: 'Also conducted:',
+          },
+          {
+            type: TextType.ListItem,
+            value: '• Extensive market and user research based on their pre-established target audience',
+          },
+          {
+            type: TextType.ListItem,
+            value: '• User research interviews with travelers, travel agents, and hotels to flesh out the list of needed features and establish a core product that we could move forward with in development and testing',
+          },
+          {
+            type: TextType.Body,
+            value: '',
+          },
+          {
+            type: TextType.Body,
+            value: '',
+          },
+          {
+            type: TextType.Body,
+            value: 'I used this research to then create three user flows and the initial site architecture.'
+          }
+        ]
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/benny/Body/group-6@3x.jpg',
+        paddingPercentage: 40,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/benny/Body/group-7@3x.jpg',
+        paddingPercentage: 40,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/benny/Body/group-8@3x.jpg',
+        paddingPercentage: 40,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/benny/Body/group-4@3x.png',
+        paddingPercentage: 53,
+      },
+      {
+        type: Type.Text,
+        text: [
+          {
+            type: TextType.Header,
+            value: 'Refining the Vision',
+          },
+          {
+            type: TextType.Body,
+            value: 'As I built out the wireframes it was clear that the product was becoming too complex. After conducting two different user-testing sessions, we decided to further simplify and refine the product. This ultimately led to a shift in the business model as well. I worked directly with the CEO to identify the changes that needed to be made that would support both the new business model and the research and strategy already in place.',
+          },
+          {
+            type: TextType.Body,
+            value: 'We ultimately landed on the following product: ',
+          },
+        ]
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/benny/Body/group-5@3x.png',
+        paddingPercentage: 58,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/benny/Body/home-expanded@3x.jpg',
+        paddingPercentage: 190,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/benny/Body/hotel-search-1@3x.jpg',
+        paddingPercentage: 73,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/benny/Body/search-rec@3x.jpg',
+        paddingPercentage: 73,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/benny/Body/search-filter@3x.jpg',
+        paddingPercentage: 73,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/benny/Body/review-pop-up@3x.jpg',
+        paddingPercentage: 73,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/benny/Body/hotel-profile-1@3x.jpg',
+        paddingPercentage: 126,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/benny/Body/check-out-copy@3x.jpg',
+        paddingPercentage: 71,
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/benny/Body/commissions@3x.jpg',
+        paddingPercentage: 80,
+      },
+    ],
+    carouselImages: [
+      {
+        src: '../assets/images/benny/Carousel/Color_Pallette_Benny.png',
+        width: getScaledWidth(956, 601, 450),
+        mobileWidth: getScaledWidth(956, 601, 250),
+      },
+      {
+        src: '../assets/images/benny/Carousel/Benny_Fonts.png',
+        width: getScaledWidth(766, 900, 450),
+        mobileWidth: getScaledWidth(766, 900, 250),
+      },
+      {
+        src: '../assets/images/benny/Carousel/Benny_Mobile_Climb.jpg',
+        width: getScaledWidth(756, 684, 450),
+        mobileWidth: getScaledWidth(756, 684, 250),
+      },
+      {
+        src: '../assets/images/benny/Carousel/Benny_Mobile_Fins.jpg',
+        width: getScaledWidth(756, 684, 450),
+        mobileWidth: getScaledWidth(756, 684, 250),
+      },
+      {
+        src: '../assets/images/benny/Carousel/Benny_Mobile_Bathtub.jpg',
+        width: getScaledWidth(756, 684, 450),
+        mobileWidth: getScaledWidth(756, 684, 250),
+      },
+      {
+        src: '../assets/images/benny/Carousel/Benny_Mobile_Mirror.jpg',
+        width: getScaledWidth(756, 684, 450),
+        mobileWidth: getScaledWidth(756, 684, 250),
+      },
+      {
+        src: '../assets/images/benny/Carousel/Benny_Snorkel_HR.jpg',
+        width: getScaledWidth(2000, 2499, 450),
+        mobileWidth: getScaledWidth(2000, 2499, 250),
+      },
+    ],
+  },
+  {
     id: 3,
     name: 'Share The Love',
     src: '../assets/images/design/share-the-love-home@3x.jpg',

@@ -42,6 +42,10 @@
   color: #5b5b5b;
 }
 
+.listitem {
+  padding-left: 14px;
+}
+
 .carousel-wrapper {
   overflow-x: hidden;
   width: 100vw;

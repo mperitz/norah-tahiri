@@ -88,7 +88,7 @@ export class DesignProjectPageComponent implements OnInit {
 
   getTextClass(type: string): string {
     if (type === 'header') return 'text text-header';
-    else if (type === 'listItem') return 'text-body';
+    else if (type === 'listItem') return 'text-body listitem';
     return 'text text-body';
   }
 
