@@ -773,6 +773,110 @@ const designProjects: Array<Project> = [
       },
     ],
   },
+  {
+    id: 6,
+    name: 'Witty',
+    src: '../assets/images/design/witty-header@3x.jpg',
+    color: '#f7c54c',
+    isDefault: false,
+    mainDescription: 'Witty is a coffee and vegan donuts shop located in a used books store on Orcas Island, Washington State.',
+    client: 'Witty',
+    href: '',
+    team: [
+      'Norah Tahiri Design',
+    ],
+    role: 'Art Director & Designer',
+    content: [
+      {
+        type: Type.Text,
+        text: [
+          {
+            type: TextType.Body,
+            value: 'I was hired to design the logo and develop the branding for Witty. I began the process by running a creative workshop with the owner, Whitney. I wanted to gain a better understanding of the business values and to identify their target audience and the personality behind the brand.',
+          },
+          {
+            type: TextType.Body,
+            value: 'Based on the findings of the workshop, I set out to create a brand that was nostalgic, fun, and artsy. I drew inspiration from vintage graphics to create the hand drawn illustrations and logo. I used a retro color palette to evoke the warm feeling of nostalgia.',
+          },
+        ]
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/witty/Body/group-5@3x.png',
+        paddingPercentage: calcRatio(1500, 3000),
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/witty/Body/group-6@3x.png',
+        paddingPercentage: calcRatio(1869, 3003),
+      },
+      {
+        type: Type.Text,
+        text: [
+          {
+            type: TextType.Body,
+            value: 'Whitney wanted Witty to be a space where all ages could gather and spend quality time together, talking, playing games and reading the progressive literature in the used books store.',
+          },
+          {
+            type: TextType.Body,
+            value: 'So as part of the branding, I wanted to highlight the fun and "witty” aspect of the business to help elicit conversations. On packaging, coasters, menus and other print pieces you’ll find little hand drawn coffee and donuts telling jokes.',
+          },
+        ]
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/witty/Body/4-coffeebag@3x.jpg',
+        paddingPercentage: calcRatio(1806, 2991),
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/witty/Body/2-coffeecup@3x.jpg',
+        paddingPercentage: calcRatio(1824, 2997),
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/witty/Body/3-coasters@3x.jpg',
+        paddingPercentage: calcRatio(1797, 2991),
+      },
+      {
+        type: Type.Image,
+        src: '../assets/images/witty/Body/5-box@3x.jpg',
+        paddingPercentage: calcRatio(2247, 2997),
+      },
+    ],
+    carouselImages: [
+      {
+        src: '../assets/images/witty/Carousel/1_Color_Pallette_Witty.png',
+        width: getScaledWidth(956, 601, 450),
+        mobileWidth: getScaledWidth(956, 601, 250),
+      },
+      {
+        src: '../assets/images/witty/Carousel/2_witty-font.png',
+        width: getScaledWidth(793, 939, 450),
+        mobileWidth: getScaledWidth(793, 939, 250),
+      },
+      {
+        src: '../assets/images/witty/Carousel/3_witty2.png',
+        width: getScaledWidth(1200, 1196, 450),
+        mobileWidth: getScaledWidth(1200, 1196, 250),
+      },
+      {
+        src: '../assets/images/witty/Carousel/4_witty.png',
+        width: getScaledWidth(1194, 1194, 450),
+        mobileWidth: getScaledWidth(1194, 1194, 250),
+      },
+      {
+        src: '../assets/images/witty/Carousel/5_witty.png',
+        width: getScaledWidth(1194, 1194, 450),
+        mobileWidth: getScaledWidth(1194, 1194, 250),
+      },
+      {
+        src: '../assets/images/witty/Carousel/6_witty.jpg',
+        width: getScaledWidth(2048, 1536, 450),
+        mobileWidth: getScaledWidth(2048, 1536, 250),
+      },
+    ],
+  },
 ];
 
 // Projects removed from view at Norah's request.
