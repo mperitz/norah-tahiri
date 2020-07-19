@@ -48,7 +48,7 @@
   <p class="description-text light-text">{{project.mainDescription}}</p>
 </div>
 
-<div class="full-width-flex-container" [style.background]="project.color + '7a'">
+<div *ngIf="project" class="full-width-flex-container" [style.background]="project.color + '7a'">
   <div class="detail-half">
     <div class="detail-text-container">
       <p class="detail-title-text">Team</p>

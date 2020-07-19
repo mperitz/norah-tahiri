@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 
+import yearString from 'src/data/year';
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -17,6 +19,7 @@ export class AboutComponent implements OnInit {
   public email: string = 'mailto:ntahiri@gmail.com';
   public instagram: string = 'https://www.instagram.com/ntahiri/';
   public previousClients: string = 'Previous clients include: The Obama Foundation, Scholastic, LiveOnNY, The Standard, One Night, Boys and Girls Club of America, Merck for Mothers, Prodigy Network, The Rockefeller Foundation, Abbott, Perry Ellis, Douglas Elliman and more.';
+  public year: string = yearString;
 
   constructor(
     private route: ActivatedRoute,

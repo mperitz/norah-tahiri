@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import designProjects from 'src/data/design-projects';
 import Project from 'src/data-structures/Project';
 import photographyProjects from 'src/data/photography-projects';
+import yearString from 'src/data/year';
 
 @Component({
   selector: 'app-menu',
@@ -15,6 +16,8 @@ export class MenuComponent implements OnInit {
   photographyProjects: Array<Project> = photographyProjects;
   heightClass: string;
   footerClass: string;
+
+  public year: string = yearString;
 
   ngOnInit() {
     setTimeout(this.getHeight, 200);

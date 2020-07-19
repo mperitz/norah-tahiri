@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import Project from 'src/data-structures/Project';
 import designProjects from 'src/data/design-projects';
 
@@ -29,25 +29,29 @@ export class DesignProjectPageComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
   ) { }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(({ name }) => {
-      designProjects.forEach((project, index) => {
-        if (project.url === name) {
-          this.project = project;
-          this.nextProject = designProjects[(index + 1) % designProjects.length];
-          this.prevProject = designProjects[index - 1 === -1 ? designProjects.length - 1 : index -1];
-        }
-      });
-      this.setUpVideoPlayers();
-      this.initVideoScript();
+      const projectIndex = designProjects.findIndex(({ url }) => url === name);
+
+      if (projectIndex > -1) {
+        this.project = designProjects[projectIndex];
+        this.nextProject = designProjects[(projectIndex + 1) % designProjects.length];
+        this.prevProject = designProjects[projectIndex === 0 ? designProjects.length - 1 : projectIndex - 1];
+        this.setUpVideoPlayers();
+        this.initVideoScript();
+      } else {
+        this.router.navigateByUrl('not-found');
+      }
     });
   }
 
   ngOnDestroy() {
     this.sub.unsubscribe();
-    document.getElementById(this.iframeScriptId).remove();
+    const iframeScript = document.getElementById(this.iframeScriptId);
+    if (iframeScript) iframeScript.remove();
   }
 
   initVideoScript() {

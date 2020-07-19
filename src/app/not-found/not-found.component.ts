@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 
+import yearString from 'src/data/year';
+
 @Component({
   selector: 'not-found',
   templateUrl: './not-found.component.html',
@@ -13,6 +15,8 @@ import { Subscription } from 'rxjs';
 export class NotFoundComponent implements OnInit {
   redirectString: string;
   private sub: Subscription;
+
+  public year: string = yearString;
 
   constructor(
     private route: ActivatedRoute,

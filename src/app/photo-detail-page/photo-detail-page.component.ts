@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import photographyProjects from 'src/data/photography-projects';
 import Project from 'src/data-structures/Project';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -27,19 +27,23 @@ export class PhotoDetailPageComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
   ) { }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(({ name }) => {
-      photographyProjects.forEach((project, index) => {
-        if (project.url === name) {
-          this.project = project;
-          this.nextProject = photographyProjects[(index + 1) % photographyProjects.length];
-        }
-      });
-      this.getImageWidths();
-      this.getImageHeights();
+      const projectIndex = photographyProjects.findIndex(({ url }) => url === name);
+
+      if (projectIndex > -1) {
+        this.project = photographyProjects[projectIndex];
+        this.nextProject = photographyProjects[(projectIndex + 1) % photographyProjects.length];
+        this.getImageWidths();
+        this.getImageHeights();
+      } else {
+        this.router.navigateByUrl('not-found');
+      }
     });
+
     window.addEventListener('resize', this.getImageWidths);
   }
 
