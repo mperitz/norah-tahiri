@@ -47,8 +47,12 @@
 }
 
 .carousel-wrapper {
-  overflow-x: hidden;
+  overflow-x: scroll;
   width: 100vw;
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .drag-line-container {
@@ -73,7 +77,7 @@
 }
 
 .drag-line {
-  width: 40px;
+  width: 85px;
   height: 1px;
   background: #363636;
 }

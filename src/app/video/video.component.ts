@@ -17,14 +17,12 @@ export class VideoComponent implements OnInit {
       videoId: this.videoId,
       events: {
         'onError': (e) => {
-          this.onPlayerError(e)
+          this.onPlayerError(e);
         },
         'onReady': (e) => {
           if (!this.reframed) {
             this.reframed = true;
-            console.log(document.getElementById(`design-video-${this.videoId}`));
             reframe(e.target.A);
-
             document.getElementById(`design-video-${this.videoId}`).classList.remove('hidden');
           }
         }
@@ -34,6 +32,6 @@ export class VideoComponent implements OnInit {
 
   onPlayerError = (event) => {
     console.error(`Error playing video: ${this.videoId}`);
-    console.log('Error event: ', event);
+    console.error('Error event: ', event);
   };
 }
