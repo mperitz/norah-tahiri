@@ -14,6 +14,18 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## Deploying
+1. Go to digitalocean.com and log in with Norah's credentials.
+2. Copy the cloud ip address from the dashboard.
+3. Run `ssh root@<ip-address>` in the terminal.  The password is the same as the password to log on to digitalocean.
+4. Once you have accessed the terminal, run `cd norah-tahiri`.
+5. Pull your new changes down from github `git pull`.
+6. View the existing process by enterring `pm2 list`.
+7. Note the currently running process's ID (leftmost column).
+8. Kill the process by enterring `pm2 stop <ID>`.
+9. Restart the process by enterring `pm2 start npm -- run prod`.
+10. Verify that the binary builds and serves by viewing the logs - `pm2 logs`.  You should see no errors.  Further verification can be done by checking norahtahiri.com.
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
