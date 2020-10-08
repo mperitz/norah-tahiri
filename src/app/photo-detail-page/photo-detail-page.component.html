@@ -57,7 +57,7 @@
       <p class="counter-text">{{currentPhotoIdx + 1}} / {{project.photos.length}}</p>
     </div>
     <i [ngClass]="'arrow-mobile ' + rightArrowClass" (click)="carouselRight()"></i>
-    <a [href]="'/photography/' + nextProject.id" class="anchor right bottom">
+    <a [href]="'/photography/' + nextProject.url" class="anchor right bottom">
       <p class="info-text">NEXT PROJECT</p>
     </a>
   </div>
